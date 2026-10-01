@@ -1,0 +1,11 @@
+Finding 1: The Division Did Not Complete Planned Examinations of High-Risk Models in a Timely Manner
+Background
+The Division of Enterprise Regulation (the Division) is responsible for the supervision of model risk at the Enterprises. According to the Division's examination guidance, models classified by the Enterprises as high-risk should be subject to targeted examination at least once every three years. As of the first quarter of 2019, the Enterprises had classified 120 models as high-risk.
+What We Found
+We reviewed the Division's examination plans and supporting workpapers for the 2014 through 2019 examination cycles. We found that the Division planned 34 targeted examinations of high-risk models during this period but completed only 21. Of the 21 completed examinations, 9 were completed in a later cycle than originally planned. In addition, 43 of the 120 high-risk models had not been the subject of any targeted examination during the six-year period.
+Division officials attributed these delays to competing supervisory priorities and to limited staff with the specialised quantitative skills necessary to examine complex models. Officials told us that examination resources were redirected during this period to address other high-priority areas, including credit risk transfer transactions and information technology risk.
+We also found that the Division did not have a documented process for prioritising high-risk models for examination. Examiners selected models for review based on professional judgement, but the rationale for these selections was not consistently recorded in the examination workpapers.
+Why This Matters
+The models used by the Enterprises inform decisions with significant financial consequences, including loan pricing, loss reserving, and capital planning. Without timely and comprehensive examination coverage, the Division may not identify deficiencies in the Enterprises' model risk management practices before those deficiencies result in financial losses or safety and soundness concerns.
+Recommendations
+We recommend that the Deputy Director of the Division:

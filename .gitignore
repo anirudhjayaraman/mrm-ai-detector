@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+# downloaded corpora, feature caches and third-party detector scores
+benchmarks/data/
+# generated reports
+*.report.html
+
+# local documents you do not want committed
+private/
+examples_report.html
+*_report.html

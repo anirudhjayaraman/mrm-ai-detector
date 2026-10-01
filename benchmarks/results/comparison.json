@@ -1,0 +1,509 @@
+{
+  "mrm-detector": {
+    "segment": {
+      "n": 868,
+      "auc": 0.8924103237095363,
+      "tpr_at_1pct_fpr": 0.32222222222222224,
+      "tpr_at_5pct_fpr": 0.575,
+      "threshold": 0.72,
+      "tpr": 0.6083333333333333,
+      "fpr": 0.05511811023622047,
+      "accuracy": 0.8052995391705069
+    },
+    "document_all": {
+      "n": 331,
+      "auc": 0.932858187134503,
+      "tpr_at_1pct_fpr": 0.5497076023391813,
+      "tpr_at_5pct_fpr": 0.7368421052631579,
+      "threshold": 0.72,
+      "tpr": 0.5146198830409356,
+      "fpr": 0.00625,
+      "accuracy": 0.7462235649546828
+    },
+    "document_in_domain": {
+      "n": 102,
+      "auc": 0.8986801242236024,
+      "tpr_at_1pct_fpr": 0.5869565217391305,
+      "tpr_at_5pct_fpr": 0.782608695652174,
+      "threshold": 0.72,
+      "tpr": 0.7391304347826086,
+      "fpr": 0.017857142857142856,
+      "accuracy": 0.8725490196078431
+    },
+    "document_out_of_domain": {
+      "n": 229,
+      "auc": 0.9451538461538461,
+      "tpr_at_1pct_fpr": 0.552,
+      "tpr_at_5pct_fpr": 0.72,
+      "threshold": 0.72,
+      "tpr": 0.432,
+      "fpr": 0.0,
+      "accuracy": 0.6899563318777293
+    },
+    "detected_by_generator": {
+      "HuggingFaceTB/SmolLM2-1.7B-Instruct": 0.857,
+      "Qwen/Qwen2.5-1.5B-Instruct": 0.947,
+      "chatgpt": 1.0,
+      "claude-opus-5-5": 0.0,
+      "cohere": 0.5,
+      "flan-t5": 0.2,
+      "gpt-3.5-turbo": 0.403,
+      "microsoft/Phi-3.5-mini-instruct": 1.0,
+      "text-davinci-003": 0.2
+    },
+    "false_positive_by_family": {
+      "academic": 0.0,
+      "business_email": 0.024,
+      "comment_letter": 0.0,
+      "hc3_finance": 0.0,
+      "m4_arxiv_abstract": 0.0,
+      "m4_peer_review": 0.0,
+      "model_documentation": 0.0,
+      "regulatory_guidance": 0.0,
+      "supervisory_findings": 0.0,
+      "validation_report": 0.0
+    }
+  },
+  "mrm-detector+lm": {
+    "segment": {
+      "n": 868,
+      "auc": 0.9631506999125109,
+      "tpr_at_1pct_fpr": 0.8694444444444445,
+      "tpr_at_5pct_fpr": 0.8861111111111111,
+      "threshold": 0.5,
+      "tpr": 0.8861111111111111,
+      "fpr": 0.04921259842519685,
+      "accuracy": 0.923963133640553
+    },
+    "document_all": {
+      "n": 331,
+      "auc": 0.9851608187134503,
+      "tpr_at_1pct_fpr": 0.9415204678362573,
+      "tpr_at_5pct_fpr": 0.9532163742690059,
+      "threshold": 0.5,
+      "tpr": 0.9064327485380117,
+      "fpr": 0.0,
+      "accuracy": 0.9516616314199395
+    },
+    "document_in_domain": {
+      "n": 102,
+      "auc": 0.9615683229813664,
+      "tpr_at_1pct_fpr": 0.8695652173913043,
+      "tpr_at_5pct_fpr": 0.8913043478260869,
+      "threshold": 0.5,
+      "tpr": 0.8695652173913043,
+      "fpr": 0.0,
+      "accuracy": 0.9411764705882353
+    },
+    "document_out_of_domain": {
+      "n": 229,
+      "auc": 0.9933846153846154,
+      "tpr_at_1pct_fpr": 0.968,
+      "tpr_at_5pct_fpr": 0.976,
+      "threshold": 0.5,
+      "tpr": 0.92,
+      "fpr": 0.0,
+      "accuracy": 0.9563318777292577
+    },
+    "detected_by_generator": {
+      "HuggingFaceTB/SmolLM2-1.7B-Instruct": 1.0,
+      "Qwen/Qwen2.5-1.5B-Instruct": 1.0,
+      "chatgpt": 1.0,
+      "claude-opus-5-5": 0.333,
+      "cohere": 1.0,
+      "flan-t5": 0.867,
+      "gpt-3.5-turbo": 1.0,
+      "microsoft/Phi-3.5-mini-instruct": 1.0,
+      "text-davinci-003": 0.2
+    },
+    "false_positive_by_family": {
+      "academic": 0.0,
+      "business_email": 0.0,
+      "comment_letter": 0.0,
+      "hc3_finance": 0.0,
+      "m4_arxiv_abstract": 0.0,
+      "m4_peer_review": 0.0,
+      "model_documentation": 0.0,
+      "regulatory_guidance": 0.0,
+      "supervisory_findings": 0.0,
+      "validation_report": 0.0
+    }
+  },
+  "binoculars": {
+    "segment": {
+      "n": 868,
+      "auc": 0.7007217847769028,
+      "tpr_at_1pct_fpr": 0.33611111111111114,
+      "tpr_at_5pct_fpr": 0.4583333333333333
+    },
+    "document_all": {
+      "n": 331,
+      "auc": 0.7872076023391813,
+      "tpr_at_1pct_fpr": 0.49707602339181284,
+      "tpr_at_5pct_fpr": 0.5730994152046783
+    },
+    "document_in_domain": {
+      "n": 102,
+      "auc": 0.5050465838509317,
+      "tpr_at_1pct_fpr": 0.06521739130434782,
+      "tpr_at_5pct_fpr": 0.10869565217391304
+    },
+    "document_out_of_domain": {
+      "n": 229,
+      "auc": 0.9051538461538462,
+      "tpr_at_1pct_fpr": 0.68,
+      "tpr_at_5pct_fpr": 0.736
+    }
+  },
+  "fast-detectgpt": {
+    "segment": {
+      "n": 868,
+      "auc": 0.656424978127734,
+      "tpr_at_1pct_fpr": 0.2388888888888889,
+      "tpr_at_5pct_fpr": 0.4
+    },
+    "document_all": {
+      "n": 331,
+      "auc": 0.7412646198830409,
+      "tpr_at_1pct_fpr": 0.30409356725146197,
+      "tpr_at_5pct_fpr": 0.49707602339181284
+    },
+    "document_in_domain": {
+      "n": 102,
+      "auc": 0.4083850931677019,
+      "tpr_at_1pct_fpr": 0.043478260869565216,
+      "tpr_at_5pct_fpr": 0.08695652173913043
+    },
+    "document_out_of_domain": {
+      "n": 229,
+      "auc": 0.8718461538461538,
+      "tpr_at_1pct_fpr": 0.416,
+      "tpr_at_5pct_fpr": 0.632
+    }
+  },
+  "hc3-roberta": {
+    "segment": {
+      "n": 868,
+      "auc": 0.8358103674540682,
+      "tpr_at_1pct_fpr": 0.26666666666666666,
+      "tpr_at_5pct_fpr": 0.5027777777777778,
+      "threshold": 0.5,
+      "tpr": 0.4861111111111111,
+      "fpr": 0.047244094488188976,
+      "accuracy": 0.7592165898617511
+    },
+    "document_all": {
+      "n": 331,
+      "auc": 0.922514619883041,
+      "tpr_at_1pct_fpr": 0.34502923976608185,
+      "tpr_at_5pct_fpr": 0.7485380116959064,
+      "threshold": 0.5,
+      "tpr": 0.6198830409356725,
+      "fpr": 0.01875,
+      "accuracy": 0.7945619335347432
+    },
+    "document_in_domain": {
+      "n": 102,
+      "auc": 0.7554347826086957,
+      "tpr_at_1pct_fpr": 0.0,
+      "tpr_at_5pct_fpr": 0.21739130434782608,
+      "threshold": 0.5,
+      "tpr": 0.2826086956521739,
+      "fpr": 0.05357142857142857,
+      "accuracy": 0.6470588235294118
+    },
+    "document_out_of_domain": {
+      "n": 229,
+      "auc": 0.982,
+      "tpr_at_1pct_fpr": 0.808,
+      "tpr_at_5pct_fpr": 0.904,
+      "threshold": 0.5,
+      "tpr": 0.744,
+      "fpr": 0.0,
+      "accuracy": 0.8602620087336245
+    },
+    "detected_by_generator": {
+      "HuggingFaceTB/SmolLM2-1.7B-Instruct": 0.429,
+      "Qwen/Qwen2.5-1.5B-Instruct": 0.368,
+      "chatgpt": 0.846,
+      "claude-opus-5-5": 0.0,
+      "cohere": 0.8,
+      "flan-t5": 0.0,
+      "gpt-3.5-turbo": 0.961,
+      "microsoft/Phi-3.5-mini-instruct": 0.0,
+      "text-davinci-003": 0.0
+    },
+    "false_positive_by_family": {
+      "academic": 0.0,
+      "business_email": 0.049,
+      "comment_letter": 0.0,
+      "hc3_finance": 0.0,
+      "m4_arxiv_abstract": 0.0,
+      "m4_peer_review": 0.0,
+      "model_documentation": 0.0,
+      "regulatory_guidance": 0.0,
+      "supervisory_findings": 0.0,
+      "validation_report": 0.5
+    }
+  },
+  "fakespot-roberta": {
+    "segment": {
+      "n": 868,
+      "auc": 0.9550634295713036,
+      "tpr_at_1pct_fpr": 0.8472222222222222,
+      "tpr_at_5pct_fpr": 0.8805555555555555,
+      "threshold": 0.5,
+      "tpr": 0.9361111111111111,
+      "fpr": 0.2795275590551181,
+      "accuracy": 0.8099078341013825
+    },
+    "document_all": {
+      "n": 331,
+      "auc": 0.9646198830409357,
+      "tpr_at_1pct_fpr": 0.8713450292397661,
+      "tpr_at_5pct_fpr": 0.9064327485380117,
+      "threshold": 0.5,
+      "tpr": 0.9473684210526315,
+      "fpr": 0.1625,
+      "accuracy": 0.8942598187311178
+    },
+    "document_in_domain": {
+      "n": 102,
+      "auc": 0.9293478260869565,
+      "tpr_at_1pct_fpr": 0.8043478260869565,
+      "tpr_at_5pct_fpr": 0.8478260869565217,
+      "threshold": 0.5,
+      "tpr": 0.8913043478260869,
+      "fpr": 0.10714285714285714,
+      "accuracy": 0.8921568627450981
+    },
+    "document_out_of_domain": {
+      "n": 229,
+      "auc": 0.9804615384615385,
+      "tpr_at_1pct_fpr": 0.912,
+      "tpr_at_5pct_fpr": 0.936,
+      "threshold": 0.5,
+      "tpr": 0.968,
+      "fpr": 0.19230769230769232,
+      "accuracy": 0.8951965065502183
+    },
+    "detected_by_generator": {
+      "HuggingFaceTB/SmolLM2-1.7B-Instruct": 0.929,
+      "Qwen/Qwen2.5-1.5B-Instruct": 1.0,
+      "chatgpt": 1.0,
+      "claude-opus-5-5": 0.556,
+      "cohere": 1.0,
+      "flan-t5": 1.0,
+      "gpt-3.5-turbo": 1.0,
+      "microsoft/Phi-3.5-mini-instruct": 1.0,
+      "text-davinci-003": 0.6
+    },
+    "false_positive_by_family": {
+      "academic": 0.5,
+      "business_email": 0.024,
+      "comment_letter": 0.5,
+      "hc3_finance": 0.289,
+      "m4_arxiv_abstract": 0.1,
+      "m4_peer_review": 0.167,
+      "model_documentation": 0.0,
+      "regulatory_guidance": 0.333,
+      "supervisory_findings": 0.333,
+      "validation_report": 0.0
+    }
+  },
+  "desklib-deberta": {
+    "segment": {
+      "n": 868,
+      "auc": 0.951017060367454,
+      "tpr_at_1pct_fpr": 0.7694444444444445,
+      "tpr_at_5pct_fpr": 0.8861111111111111,
+      "threshold": 0.5,
+      "tpr": 0.9277777777777778,
+      "fpr": 0.19488188976377951,
+      "accuracy": 0.8559907834101382
+    },
+    "document_all": {
+      "n": 331,
+      "auc": 0.9614400584795322,
+      "tpr_at_1pct_fpr": 0.8421052631578947,
+      "tpr_at_5pct_fpr": 0.9181286549707602,
+      "threshold": 0.5,
+      "tpr": 0.9298245614035088,
+      "fpr": 0.14375,
+      "accuracy": 0.8942598187311178
+    },
+    "document_in_domain": {
+      "n": 102,
+      "auc": 0.9239130434782609,
+      "tpr_at_1pct_fpr": 0.8260869565217391,
+      "tpr_at_5pct_fpr": 0.8695652173913043,
+      "threshold": 0.5,
+      "tpr": 0.8913043478260869,
+      "fpr": 0.21428571428571427,
+      "accuracy": 0.8333333333333334
+    },
+    "document_out_of_domain": {
+      "n": 229,
+      "auc": 0.9766153846153847,
+      "tpr_at_1pct_fpr": 0.864,
+      "tpr_at_5pct_fpr": 0.944,
+      "threshold": 0.5,
+      "tpr": 0.944,
+      "fpr": 0.10576923076923077,
+      "accuracy": 0.9213973799126638
+    },
+    "detected_by_generator": {
+      "HuggingFaceTB/SmolLM2-1.7B-Instruct": 1.0,
+      "Qwen/Qwen2.5-1.5B-Instruct": 1.0,
+      "chatgpt": 1.0,
+      "claude-opus-5-5": 0.444,
+      "cohere": 1.0,
+      "flan-t5": 0.867,
+      "gpt-3.5-turbo": 1.0,
+      "microsoft/Phi-3.5-mini-instruct": 1.0,
+      "text-davinci-003": 0.5
+    },
+    "false_positive_by_family": {
+      "academic": 0.0,
+      "business_email": 0.244,
+      "comment_letter": 0.0,
+      "hc3_finance": 0.132,
+      "m4_arxiv_abstract": 0.167,
+      "m4_peer_review": 0.028,
+      "model_documentation": 0.0,
+      "regulatory_guidance": 0.333,
+      "supervisory_findings": 0.333,
+      "validation_report": 0.0
+    }
+  },
+  "openai-roberta": {
+    "segment": {
+      "n": 868,
+      "auc": 0.6820866141732284,
+      "tpr_at_1pct_fpr": 0.2638888888888889,
+      "tpr_at_5pct_fpr": 0.375,
+      "threshold": 0.5,
+      "tpr": 0.4111111111111111,
+      "fpr": 0.07480314960629922,
+      "accuracy": 0.7119815668202765
+    },
+    "document_all": {
+      "n": 331,
+      "auc": 0.8012792397660818,
+      "tpr_at_1pct_fpr": 0.34502923976608185,
+      "tpr_at_5pct_fpr": 0.5730994152046783,
+      "threshold": 0.5,
+      "tpr": 0.5497076023391813,
+      "fpr": 0.0375,
+      "accuracy": 0.7492447129909365
+    },
+    "document_in_domain": {
+      "n": 102,
+      "auc": 0.40683229813664595,
+      "tpr_at_1pct_fpr": 0.0,
+      "tpr_at_5pct_fpr": 0.021739130434782608,
+      "threshold": 0.5,
+      "tpr": 0.06521739130434782,
+      "fpr": 0.05357142857142857,
+      "accuracy": 0.5490196078431373
+    },
+    "document_out_of_domain": {
+      "n": 229,
+      "auc": 0.9116923076923077,
+      "tpr_at_1pct_fpr": 0.528,
+      "tpr_at_5pct_fpr": 0.8,
+      "threshold": 0.5,
+      "tpr": 0.728,
+      "fpr": 0.028846153846153848,
+      "accuracy": 0.8384279475982532
+    },
+    "detected_by_generator": {
+      "HuggingFaceTB/SmolLM2-1.7B-Instruct": 0.0,
+      "Qwen/Qwen2.5-1.5B-Instruct": 0.0,
+      "chatgpt": 0.615,
+      "claude-opus-5-5": 0.0,
+      "cohere": 0.7,
+      "flan-t5": 0.667,
+      "gpt-3.5-turbo": 0.857,
+      "microsoft/Phi-3.5-mini-instruct": 0.75,
+      "text-davinci-003": 0.0
+    },
+    "false_positive_by_family": {
+      "academic": 0.0,
+      "business_email": 0.073,
+      "comment_letter": 0.0,
+      "hc3_finance": 0.079,
+      "m4_arxiv_abstract": 0.0,
+      "m4_peer_review": 0.0,
+      "model_documentation": 0.0,
+      "regulatory_guidance": 0.0,
+      "supervisory_findings": 0.0,
+      "validation_report": 0.0
+    }
+  },
+  "radar": {
+    "segment": {
+      "n": 868,
+      "auc": 0.7687718722659668,
+      "tpr_at_1pct_fpr": 0.03333333333333333,
+      "tpr_at_5pct_fpr": 0.24444444444444444,
+      "threshold": 0.5,
+      "tpr": 0.7083333333333334,
+      "fpr": 0.2795275590551181,
+      "accuracy": 0.7154377880184332
+    },
+    "document_all": {
+      "n": 331,
+      "auc": 0.824890350877193,
+      "tpr_at_1pct_fpr": 0.1871345029239766,
+      "tpr_at_5pct_fpr": 0.47368421052631576,
+      "threshold": 0.5,
+      "tpr": 0.6549707602339181,
+      "fpr": 0.16875,
+      "accuracy": 0.7401812688821753
+    },
+    "document_in_domain": {
+      "n": 102,
+      "auc": 0.6413043478260869,
+      "tpr_at_1pct_fpr": 0.06521739130434782,
+      "tpr_at_5pct_fpr": 0.13043478260869565,
+      "threshold": 0.5,
+      "tpr": 0.5,
+      "fpr": 0.21428571428571427,
+      "accuracy": 0.6568627450980392
+    },
+    "document_out_of_domain": {
+      "n": 229,
+      "auc": 0.8921538461538462,
+      "tpr_at_1pct_fpr": 0.28,
+      "tpr_at_5pct_fpr": 0.64,
+      "threshold": 0.5,
+      "tpr": 0.712,
+      "fpr": 0.14423076923076922,
+      "accuracy": 0.777292576419214
+    },
+    "detected_by_generator": {
+      "HuggingFaceTB/SmolLM2-1.7B-Instruct": 0.643,
+      "Qwen/Qwen2.5-1.5B-Instruct": 0.737,
+      "chatgpt": 1.0,
+      "claude-opus-5-5": 0.0,
+      "cohere": 1.0,
+      "flan-t5": 0.933,
+      "gpt-3.5-turbo": 0.675,
+      "microsoft/Phi-3.5-mini-instruct": 0.0,
+      "text-davinci-003": 0.0
+    },
+    "false_positive_by_family": {
+      "academic": 0.0,
+      "business_email": 0.268,
+      "comment_letter": 0.0,
+      "hc3_finance": 0.053,
+      "m4_arxiv_abstract": 0.0,
+      "m4_peer_review": 0.361,
+      "model_documentation": 0.0,
+      "regulatory_guidance": 0.333,
+      "supervisory_findings": 0.0,
+      "validation_report": 0.0
+    }
+  }
+}

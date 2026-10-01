@@ -1,0 +1,526 @@
+{
+  "_comment": "Calibration/benchmark corpus. Human documents are restricted to publications dated before ChatGPT's release (30 Nov 2022) so that their human authorship is not in doubt. Texts are downloaded at run time and are not redistributed in this repository.",
+  "documents": [
+    {
+      "id": "fed_sr11-7",
+      "label": "human",
+      "family": "regulatory_guidance",
+      "year": 2011,
+      "format": "pdf",
+      "title": "Federal Reserve SR 11-7: Supervisory Guidance on Model Risk Management",
+      "url": "https://www.federalreserve.gov/boarddocs/srletters/2011/sr1107a1.pdf"
+    },
+    {
+      "id": "fed_sr15-18",
+      "label": "human",
+      "family": "regulatory_guidance",
+      "year": 2015,
+      "format": "pdf",
+      "title": "Federal Reserve SR 15-18: Capital planning expectations for large firms",
+      "url": "https://www.federalreserve.gov/supervisionreg/srletters/sr1518a1.pdf"
+    },
+    {
+      "id": "fhfa_ab2013-07",
+      "label": "human",
+      "family": "regulatory_guidance",
+      "year": 2013,
+      "format": "pdf",
+      "title": "FHFA Advisory Bulletin AB 2013-07: Model Risk Management Guidance",
+      "url": "https://www.fhfa.gov/advisory-bulletin/ab-2013-07"
+    },
+    {
+      "id": "pra_ss3-18",
+      "label": "human",
+      "family": "regulatory_guidance",
+      "year": 2018,
+      "format": "pdf",
+      "title": "PRA SS3/18: Model risk management principles for stress testing",
+      "url": "https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/supervisory-statement/2018/ss318.pdf"
+    },
+    {
+      "id": "pra_cp6-22",
+      "label": "human",
+      "family": "regulatory_guidance",
+      "year": 2022,
+      "format": "pdf",
+      "title": "PRA CP6/22: Model risk management principles for banks",
+      "url": "https://www.bankofengland.co.uk/-/media/boe/files/prudential-regulation/consultation-paper/2022/june/model-risk-management-principle-for-banks.pdf"
+    },
+    {
+      "id": "ecb_guide_internal_models_2019",
+      "label": "human",
+      "family": "regulatory_guidance",
+      "year": 2019,
+      "format": "pdf",
+      "title": "ECB Guide to internal models (consolidated, Oct 2019)",
+      "url": "https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.guidetointernalmodels_consolidated_201910~97fd49fb08.en.pdf"
+    },
+    {
+      "id": "ecb_trim_report_2021",
+      "label": "human",
+      "family": "supervisory_findings",
+      "year": 2021,
+      "format": "pdf",
+      "title": "ECB Targeted Review of Internal Models (TRIM) project report",
+      "url": "https://www.bankingsupervision.europa.eu/ecb/pub/pdf/ssm.trim_project_report~aa49bb624c.en.pdf"
+    },
+    {
+      "id": "eba_gl_2017_16",
+      "label": "human",
+      "family": "regulatory_guidance",
+      "year": 2017,
+      "format": "pdf",
+      "title": "EBA Guidelines on PD estimation, LGD estimation and treatment of defaulted exposures",
+      "url": "https://www.eba.europa.eu/sites/default/files/documents/10180/2033363/6b062012-45d6-4655-af04-801d26493ed0/Guidelines%20on%20PD%20and%20LGD%20estimation%20%28EBA-GL-2017-16%29.pdf"
+    },
+    {
+      "id": "eba_dp_ml_irb_2021",
+      "label": "human",
+      "family": "regulatory_guidance",
+      "year": 2021,
+      "format": "pdf",
+      "title": "EBA Discussion paper on machine learning for IRB models",
+      "url": "https://www.eba.europa.eu/sites/default/files/document_library/Publications/Discussions/2022/Discussion%20on%20machine%20learning%20for%20IRB%20models/1023883/Discussion%20paper%20on%20machine%20learning%20for%20IRB%20models.pdf"
+    },
+    {
+      "id": "fed_dfast_methodology_2021",
+      "label": "human",
+      "family": "model_documentation",
+      "year": 2021,
+      "format": "pdf",
+      "title": "Federal Reserve DFAST 2021 Supervisory Stress Test Methodology",
+      "url": "https://www.federalreserve.gov/publications/files/2021-april-supervisory-stress-test-methodology.pdf"
+    },
+    {
+      "id": "fed_dfast_methodology_2020",
+      "label": "human",
+      "family": "model_documentation",
+      "year": 2020,
+      "format": "pdf",
+      "title": "Federal Reserve DFAST 2020 Supervisory Stress Test Methodology",
+      "url": "https://www.federalreserve.gov/publications/files/2020-march-supervisory-stress-test-methodology.pdf"
+    },
+    {
+      "id": "boe_swp816_ml_explainability",
+      "label": "human",
+      "family": "academic",
+      "year": 2019,
+      "format": "pdf",
+      "title": "BoE Staff Working Paper 816: Machine learning explainability in finance",
+      "url": "https://www.bankofengland.co.uk/-/media/boe/files/working-paper/2019/machine-learning-explainability-in-finance-an-application-to-default-risk-analysis.pdf"
+    },
+    {
+      "id": "boe_fca_ml_survey_2019",
+      "label": "human",
+      "family": "regulatory_guidance",
+      "year": 2019,
+      "format": "pdf",
+      "title": "BoE/FCA Machine learning in UK financial services (2019)",
+      "url": "https://www.bankofengland.co.uk/-/media/boe/files/report/2019/machine-learning-in-uk-financial-services.pdf"
+    },
+    {
+      "id": "boe_swp674_ml_central_banks",
+      "label": "human",
+      "family": "academic",
+      "year": 2017,
+      "format": "pdf",
+      "title": "BoE Staff Working Paper 674: Machine learning at central banks",
+      "url": "https://www.bankofengland.co.uk/-/media/boe/files/working-paper/2017/machine-learning-at-central-banks.pdf"
+    },
+    {
+      "id": "rfi_op1743_crl",
+      "label": "human",
+      "family": "comment_letter",
+      "year": 2021,
+      "format": "pdf",
+      "title": "OP-1743 AI/ML RFI comment: Center for Responsible Lending",
+      "url": "https://www.federalreserve.gov/SECRS/2021/August/20210810/OP-1743/OP-1743_070121_138205_375792473834_1.pdf"
+    },
+    {
+      "id": "rfi_op1743_thetalake",
+      "label": "human",
+      "family": "comment_letter",
+      "year": 2021,
+      "format": "pdf",
+      "title": "OP-1743 AI/ML RFI comment (29 Jun 2021)",
+      "url": "https://www.federalreserve.gov/SECRS/2021/August/20210810/OP-1743/OP-1743_062921_138254_320716633892_1.pdf"
+    },
+    {
+      "id": "rfi_op1743_c3",
+      "label": "human",
+      "family": "comment_letter",
+      "year": 2021,
+      "format": "pdf",
+      "title": "OP-1743 AI/ML RFI comment (28 Jun 2021)",
+      "url": "https://www.federalreserve.gov/SECRS/2021/October/20211005/OP-1743/OP-1743_062821_138166_303174764669_1.pdf"
+    },
+    {
+      "id": "rfi_op1743_c4",
+      "label": "human",
+      "family": "comment_letter",
+      "year": 2021,
+      "format": "pdf",
+      "title": "OP-1743 AI/ML RFI comment (1 Jul 2021)",
+      "url": "https://www.federalreserve.gov/SECRS/2022/October/20221028/OP-1743/OP-1743_070121_138216_351653676425_1.pdf"
+    },
+    {
+      "id": "rfi_op1743_c5",
+      "label": "human",
+      "family": "comment_letter",
+      "year": 2021,
+      "format": "pdf",
+      "title": "OP-1743 AI/ML RFI comment (29 Jun 2021, second)",
+      "url": "https://www.federalreserve.gov/SECRS/2021/August/20210810/OP-1743/OP-1743_062921_138164_306983884758_1.pdf"
+    },
+    {
+      "id": "rfi_op1743_c6",
+      "label": "human",
+      "family": "comment_letter",
+      "year": 2021,
+      "format": "pdf",
+      "title": "OP-1743 AI/ML RFI comment (17 Jun 2021)",
+      "url": "https://www.federalreserve.gov/SECRS/2021/October/20211005/OP-1743/OP-1743_061721_138158_295493706023_1.pdf"
+    },
+    {
+      "id": "rfi_op1743_c7",
+      "label": "human",
+      "family": "comment_letter",
+      "year": 2021,
+      "format": "pdf",
+      "title": "OP-1743 AI/ML RFI comment (28 May 2021)",
+      "url": "https://www.federalreserve.gov/SECRS/2021/October/20211004/OP-1743/OP-1743_052821_138140_523801857366_1.pdf"
+    },
+    {
+      "id": "fed_rfi_c9",
+      "label": "human",
+      "family": "comment_letter",
+      "year": 2021,
+      "format": "pdf",
+      "title": "OP-1743 AI/ML RFI comment (9 Jun 2021)",
+      "url": "https://www.federalreserve.gov/SECRS/2021/July/20210709/OP-1743/OP-1743_060921_138144_462628620133_1.pdf"
+    },
+    {
+      "id": "arxiv_2205.11834",
+      "label": "human",
+      "family": "academic",
+      "year": 2022,
+      "format": "pdf",
+      "title": "Handling model risk with XVAs",
+      "url": "https://arxiv.org/pdf/2205.11834"
+    },
+    {
+      "id": "arxiv_2107.10377",
+      "label": "human",
+      "family": "academic",
+      "year": 2021,
+      "format": "pdf",
+      "title": "Everything you always wanted to know about XVA model risk",
+      "url": "https://arxiv.org/pdf/2107.10377v3"
+    },
+    {
+      "id": "arxiv_1810.09112",
+      "label": "human",
+      "family": "academic",
+      "year": 2018,
+      "format": "pdf",
+      "title": "Quantifying the model risk inherent in the calibration and recalibration of option pricing models",
+      "url": "https://arxiv.org/pdf/1810.09112"
+    },
+    {
+      "id": "arxiv_2106.10024",
+      "label": "human",
+      "family": "academic",
+      "year": 2021,
+      "format": "pdf",
+      "title": "Robust deep hedging",
+      "url": "https://arxiv.org/pdf/2106.10024"
+    },
+    {
+      "id": "arxiv_2103.08359",
+      "label": "human",
+      "family": "academic",
+      "year": 2021,
+      "format": "pdf",
+      "title": "Explaining credit risk scoring through feature contribution alignment",
+      "url": "https://arxiv.org/pdf/2103.08359"
+    },
+    {
+      "id": "arxiv_2107.08045",
+      "label": "human",
+      "family": "academic",
+      "year": 2021,
+      "format": "pdf",
+      "title": "Desiderata for explainable AI in statistical production systems of the ECB",
+      "url": "https://arxiv.org/pdf/2107.08045"
+    },
+    {
+      "id": "arxiv_1801.04112",
+      "label": "human",
+      "family": "academic",
+      "year": 2018,
+      "format": "pdf",
+      "title": "Regression based expected shortfall backtesting",
+      "url": "https://arxiv.org/pdf/1801.04112"
+    },
+    {
+      "id": "arxiv_1708.01489",
+      "label": "human",
+      "family": "academic",
+      "year": 2017,
+      "format": "pdf",
+      "title": "Spectral backtests of forecast distributions",
+      "url": "https://arxiv.org/pdf/1708.01489"
+    },
+    {
+      "id": "arxiv_2010.09937",
+      "label": "human",
+      "family": "academic",
+      "year": 2020,
+      "format": "pdf",
+      "title": "Estimating and backtesting risk under heavy tails",
+      "url": "https://arxiv.org/pdf/2010.09937"
+    },
+    {
+      "id": "arxiv_2104.10673",
+      "label": "human",
+      "family": "academic",
+      "year": 2021,
+      "format": "pdf",
+      "title": "Backtesting systemic risk forecasts using multi-objective elicitability",
+      "url": "https://arxiv.org/pdf/2104.10673"
+    },
+    {
+      "id": "arxiv_2209.10070",
+      "label": "human",
+      "family": "academic",
+      "year": 2022,
+      "format": "pdf",
+      "title": "Monotonic neural additive models for credit scoring",
+      "url": "https://arxiv.org/pdf/2209.10070"
+    },
+    {
+      "id": "arxiv_2210.02516",
+      "label": "human",
+      "family": "academic",
+      "year": 2022,
+      "format": "pdf",
+      "title": "Equalizing credit opportunity in algorithms",
+      "url": "https://arxiv.org/pdf/2210.02516"
+    },
+    {
+      "id": "fed_oig_2015_stress_test_validation",
+      "label": "human",
+      "family": "supervisory_findings",
+      "year": 2015,
+      "format": "pdf",
+      "title": "Fed OIG 2015-SR-B-018: Supervisory stress testing model validation",
+      "url": "https://oig.federalreserve.gov/reports/board-supervisory-stress-testing-model-validation-reissue-oct2015.pdf"
+    },
+    {
+      "id": "fed_oig_2022_mrm_sabr_betr",
+      "label": "human",
+      "family": "supervisory_findings",
+      "year": 2022,
+      "format": "pdf",
+      "title": "Fed OIG 2022-SR-B-016: Model risk management for SABR and BETR models",
+      "url": "https://oig.federalreserve.gov/reports/board-model-risk-management-SABR-BETR-models-dec2022.pdf"
+    },
+    {
+      "id": "fhfa_oig_evl2020_001",
+      "label": "human",
+      "family": "supervisory_findings",
+      "year": 2020,
+      "format": "pdf",
+      "title": "FHFA OIG EVL-2020-001: Examination of Enterprises' high-risk models",
+      "url": "https://www.fhfaoig.gov/sites/default/files/EVL-2020-001_REDACTED.pdf"
+    },
+    {
+      "id": "fhfa_oig_evl2016_001",
+      "label": "human",
+      "family": "supervisory_findings",
+      "year": 2016,
+      "format": "pdf",
+      "title": "FHFA OIG EVL-2016-001: Semi-annual risk assessments",
+      "url": "https://www.fhfaoig.gov/sites/default/files/EVL-2016-001_0.pdf"
+    },
+    {
+      "id": "gao_aimd_97_145",
+      "label": "human",
+      "family": "validation_report",
+      "year": 1997,
+      "format": "pdf",
+      "title": "GAO/AIMD-97-145: Review of OMB's Credit Subsidy Model",
+      "url": "https://www.gao.gov/assets/aimd-97-145.pdf"
+    },
+    {
+      "id": "gao_16_269",
+      "label": "human",
+      "family": "validation_report",
+      "year": 2016,
+      "format": "pdf",
+      "title": "GAO-16-269: Agencies should better document procedures for estimating subsidy costs",
+      "url": "https://www.gao.gov/assets/gao-16-269.pdf"
+    },
+    {
+      "id": "gao_13_400r",
+      "label": "human",
+      "family": "validation_report",
+      "year": 2013,
+      "format": "pdf",
+      "title": "GAO-13-400R",
+      "url": "https://www.gao.gov/assets/gao-13-400r.pdf"
+    },
+    {
+      "id": "fha_actuarial_review_2019",
+      "label": "human",
+      "family": "validation_report",
+      "year": 2019,
+      "format": "pdf",
+      "title": "FY2019 Independent Actuarial Review of the FHA MMI Fund (incl. model validation)",
+      "url": "https://www.hud.gov/sites/dfiles/Housing/documents/ActuarialMMIFForward2019.pdf"
+    },
+    {
+      "id": "fha_actuarial_review_hecm_2012",
+      "label": "human",
+      "family": "validation_report",
+      "year": 2012,
+      "format": "pdf",
+      "title": "Actuarial Review of FHA HECM loans FY2012",
+      "url": "https://www.hud.gov/sites/documents/ar2012_hecm_loans.pdf"
+    },
+    {
+      "id": "fha_actuarial_review_2013",
+      "label": "human",
+      "family": "validation_report",
+      "year": 2013,
+      "format": "pdf",
+      "title": "FY2013 Actuarial Review of the FHA MMI Fund forward loans",
+      "url": "https://www.hud.gov/sites/documents/smfy2013mmifundactrevfwd.pdf"
+    },
+    {
+      "id": "boe_ieo_forecast_evaluation_2015",
+      "label": "human",
+      "family": "validation_report",
+      "year": 2015,
+      "format": "pdf",
+      "title": "BoE IEO: Evaluating forecast performance (2015)",
+      "url": "https://www.bankofengland.co.uk/-/media/boe/files/independent-evaluation-office/2015/evaluating-forecast-performance-november-2015.pdf"
+    }
+  ],
+  "datasets": [
+    {
+      "id": "hc3_finance",
+      "family": "hc3_finance",
+      "format": "hc3",
+      "title": "HC3 (Guo et al., 2023) finance subset: human vs ChatGPT answers",
+      "url": "https://huggingface.co/datasets/Hello-SimpleAI/HC3/resolve/main/finance.jsonl",
+      "max_per_label": 150,
+      "min_words": 120
+    },
+    {
+      "id": "m4_peerread_chatgpt",
+      "family": "m4_peer_review",
+      "format": "m4",
+      "title": "M4 (Wang et al., 2024) PeerRead reviews: human vs gpt-3.5-turbo",
+      "url": "https://raw.githubusercontent.com/mbzuai-nlp/M4/main/data/peerread_chatgpt.jsonl",
+      "max_per_label": 60,
+      "min_words": 150
+    },
+    {
+      "id": "m4_peerread_llama",
+      "family": "m4_peer_review",
+      "format": "m4",
+      "title": "M4 PeerRead reviews: human vs LLaMA",
+      "url": "https://raw.githubusercontent.com/mbzuai-nlp/M4/main/data/peerread_llama.jsonl",
+      "max_per_label": 40,
+      "min_words": 150
+    },
+    {
+      "id": "m4_peerread_cohere",
+      "family": "m4_peer_review",
+      "format": "m4",
+      "title": "M4 PeerRead reviews: human vs Cohere",
+      "url": "https://raw.githubusercontent.com/mbzuai-nlp/M4/main/data/peerread_cohere.jsonl",
+      "max_per_label": 40,
+      "min_words": 150
+    },
+    {
+      "id": "m4_arxiv_chatgpt_qfin",
+      "family": "m4_arxiv_abstract",
+      "format": "m4",
+      "title": "M4 arXiv abstracts (finance/risk/statistics keyword filter): human vs gpt-3.5-turbo",
+      "url": "https://raw.githubusercontent.com/mbzuai-nlp/M4/main/data/arxiv_chatGPT.jsonl",
+      "max_per_label": 80,
+      "min_words": 120,
+      "keywords": [
+        "risk",
+        "portfolio",
+        "option",
+        "volatility",
+        "financial",
+        "credit",
+        "market",
+        "pricing",
+        "asset",
+        "stochastic",
+        "regression",
+        "estimat",
+        "forecast"
+      ]
+    },
+    {
+      "id": "m4_arxiv_davinci_qfin",
+      "family": "m4_arxiv_abstract",
+      "format": "m4",
+      "title": "M4 arXiv abstracts (keyword filter): human vs text-davinci-003",
+      "url": "https://raw.githubusercontent.com/mbzuai-nlp/M4/main/data/arxiv_davinci.jsonl",
+      "max_per_label": 40,
+      "min_words": 120,
+      "keywords": [
+        "risk",
+        "portfolio",
+        "option",
+        "volatility",
+        "financial",
+        "credit",
+        "market",
+        "pricing",
+        "asset",
+        "stochastic",
+        "regression",
+        "estimat",
+        "forecast"
+      ]
+    },
+    {
+      "id": "enron_business_email",
+      "family": "business_email",
+      "format": "hf_rows_email",
+      "label": "human",
+      "title": "Enron email corpus (2000-2001): substantive business emails, newest message only (human, email-genre false-positive control)",
+      "url": "https://datasets-server.huggingface.co/rows?dataset=corbt/enron-emails&config=default&split=train",
+      "max_per_label": 150,
+      "min_words": 100,
+      "keywords": [
+        "risk",
+        "model",
+        "credit",
+        "trading",
+        "position",
+        "review",
+        "audit",
+        "report",
+        "exposure",
+        "valuation",
+        "curve",
+        "var ",
+        "limit",
+        "deal",
+        "contract",
+        "analysis",
+        "issue",
+        "control"
+      ]
+    }
+  ]
+}

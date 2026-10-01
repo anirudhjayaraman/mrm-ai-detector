@@ -1,0 +1,86 @@
+{
+  "mrm-detector": {
+    "a1_claude_humanlike": {
+      "ai": 4.1,
+      "verdict": "Likely human-written",
+      "flagged": false
+    },
+    "a2_claude_numeric": {
+      "ai": 26.9,
+      "verdict": "Likely human-written",
+      "flagged": false
+    },
+    "a3_claude_ig_genre": {
+      "ai": 26.7,
+      "verdict": "Inconclusive",
+      "flagged": false
+    },
+    "a4_qwen": {
+      "ai": 90.8,
+      "verdict": "Likely AI-generated",
+      "flagged": true
+    },
+    "h1_sr11-7": {
+      "ai": 57.0,
+      "verdict": "Inconclusive",
+      "flagged": false
+    },
+    "h2_fed_oig_2015": {
+      "ai": 33.1,
+      "verdict": "Inconclusive",
+      "flagged": false
+    },
+    "h3_gao_16_269": {
+      "ai": 17.3,
+      "verdict": "Likely human-written",
+      "flagged": false
+    },
+    "h4_fhfa_oig_2020": {
+      "ai": 35.4,
+      "verdict": "Inconclusive",
+      "flagged": false
+    }
+  },
+  "mrm-detector+lm": {
+    "a1_claude_humanlike": {
+      "ai": 0.8,
+      "verdict": "Likely human-written",
+      "flagged": false
+    },
+    "a2_claude_numeric": {
+      "ai": 24.5,
+      "verdict": "Likely human-written",
+      "flagged": false
+    },
+    "a3_claude_ig_genre": {
+      "ai": 57.5,
+      "verdict": "Likely AI-generated",
+      "flagged": true
+    },
+    "a4_qwen": {
+      "ai": 99.5,
+      "verdict": "Likely AI-generated",
+      "flagged": true
+    },
+    "h1_sr11-7": {
+      "ai": 63.4,
+      "verdict": "Likely AI-generated",
+      "flagged": true
+    },
+    "h2_fed_oig_2015": {
+      "ai": 11.0,
+      "verdict": "Likely human-written",
+      "flagged": false
+    },
+    "h3_gao_16_269": {
+      "ai": 9.8,
+      "verdict": "Likely human-written",
+      "flagged": false
+    },
+    "h4_fhfa_oig_2020": {
+      "ai": 4.3,
+      "verdict": "Likely human-written",
+      "flagged": false
+    }
+  }
+}

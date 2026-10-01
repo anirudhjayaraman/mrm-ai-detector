@@ -1,0 +1,12 @@
+Finding 3 — Monotonicity of bureau utilisation not enforced (Medium)
+What we found
+The GBM scorecard (XGBoost, 400 trees, depth 4) uses revolving utilisation from the bureau as its second most important feature by mean |SHAP|. When we plotted partial dependence on the validation sample, the score falls as expected from 0% to around 75% utilisation, but then rises again between roughly 85% and 95% before dropping off. In practice this means two otherwise identical applicants could get a better score at 92% utilisation than at 80%.
+The developers told us this is a real pattern in the data — some high-utilisation customers are transactors who clear their balance each month — and that the effect is small. We looked at it. About 3.1% of approved applications in the last six months sit in the 85–95% band, so it's not negligible, and the reversal can't be explained to a declined customer in a way that would satisfy the adverse action notice requirements. We also re-ran the model with the monotone constraint on and the Gini dropped from 0.612 to 0.607 on the out-of-time sample, which is within noise.
+Why it matters
+Non-monotonic relationships on key bureau variables are hard to defend to customers and to the regulator, and the reversal is likely picking up a transactor effect that would be better modelled directly.
+What we want done
+1. Apply monotone constraints to utilisation and the two other bureau balance features flagged in Appendix B.
+2. If the transactor effect is genuine, add an explicit transactor flag rather than letting the trees approximate it.
+3. Re-run the reason-code mapping and confirm the top-4 reasons are stable for the 85–95% band.
+Owner: Cards Decision Science (J. Patel). Due: 31 March 2025.
+We'd close this on evidence of 1 and 3. Point 2 is a recommendation, not a condition.
