@@ -1,10 +1,14 @@
 # mrm-ai-detector
 
+[![PyPI](https://img.shields.io/pypi/v/mrm-ai-detector.svg)](https://pypi.org/project/mrm-ai-detector/)
+[![Python](https://img.shields.io/pypi/pyversions/mrm-ai-detector.svg)](https://pypi.org/project/mrm-ai-detector/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/anirudhjayaraman/mrm-ai-detector/blob/main/LICENSE)
+
 **Detect AI-generated text in model risk documentation**: validation reports,
 model development documentation, audit issues, MRM policies, monitoring packs
 and review e-mails.
 
-* **Zero-install core.** Pure Python standard library, 3.9+. Clone and run.
+* **Zero-dependency core.** Pure Python standard library, 3.9+. `pip install mrm-ai-detector` pulls in nothing else.
 * **Built for MRM text.** Features include evidence density (test statistics,
   data windows, model IDs, regulatory cross-references) and *unsupported
   evaluative claims* ("the model is robust and well-calibrated" with nothing
@@ -13,7 +17,7 @@ and review e-mails.
   documents (Fed SR 11-7, PRA SS3/18 and CP6/22, ECB TRIM, Fed and FHFA OIG
   model-validation reviews, GAO model reviews, Fed DFAST model documentation,
   q-fin papers) against AI-written MRM text from several model families. See
-  [benchmarks/](benchmarks/README.md).
+  [benchmarks/](https://github.com/anirudhjayaraman/mrm-ai-detector/tree/main/benchmarks).
 * **Optional ensemble with open-source detectors** (`--lm`). Binoculars and
   Fast-DetectGPT (zero-shot), plus the HC3, Fakespot (2025) and Desklib (2025)
   classifiers. On their own, the 2025 classifiers flag a third or more of human
@@ -32,20 +36,48 @@ and review e-mails.
 
 ---
 
+## Install
+
+```bash
+pip install mrm-ai-detector
+```
+
+That's the whole core: no dependencies. It reads `.txt`, `.md`, `.docx`,
+`.html` and `.eml` files and, on a Mac, photos and screenshots (`.heic`,
+`.jpg`, `.png` …) through Apple's built-in Live Text OCR engine. Optional
+extras:
+
+```bash
+pip install "mrm-ai-detector[pdf]"     # PDF support (pypdf)
+pip install "mrm-ai-detector[email]"   # Outlook .msg support (olefile)
+pip install "mrm-ai-detector[ocr]"     # photos/screenshots on Windows/Linux (RapidOCR); macOS needs nothing
+pip install "mrm-ai-detector[lm]"      # language-model ensemble (torch + transformers; ~3.5 GB of models downloaded on first use)
+pip install "mrm-ai-detector[all]"     # everything
+```
+
+To try it without installing anything permanently, use
+[`uv`](https://docs.astral.sh/uv/) or [`pipx`](https://pipx.pypa.io/):
+
+```bash
+uvx --from mrm-ai-detector mrm-detect scan report.docx
+```
+
+To install the latest development version straight from GitHub:
+
+```bash
+pip install "git+https://github.com/anirudhjayaraman/mrm-ai-detector"
+```
+
 ## Quick start
 
 ```bash
-git clone <this repo> && cd mrm-ai-detector
-python -m mrm_ai_detector scan examples/
+mrm-detect scan report.docx                 # one document
+mrm-detect scan ~/Downloads/IMG_1234.HEIC   # a photo or screenshot (macOS: built-in OCR)
+mrm-detect scan reports/ --summary          # a whole folder
 ```
 
-No installation is needed for `.txt`, `.md`, `.docx`, `.html` and `.eml`, or,
-**on a Mac, for photos and screenshots** (`.heic`, `.jpg`, `.png` …). These use
-Apple's built-in Live Text OCR engine:
-
-```bash
-python3 -m mrm_ai_detector scan ~/Downloads/IMG_1234.HEIC
-```
+The repository's `examples/` folder shows what to expect. After cloning, it
+also runs without installing: `python -m mrm_ai_detector scan examples/`.
 
 ```
 Document                                              Words  AI prob  AI share  Verdict
@@ -60,17 +92,6 @@ The examples were chosen to show the limits honestly. Text from a small open
 model is caught, but the Claude-written summary passes as human, and so does
 the report with an inserted Claude-written section. SR 11-7, a human text,
 sits in the inconclusive band. See [Benchmark summary](#benchmark-summary).
-
-Install the command-line tool and optional extras:
-
-```bash
-pip install .            # adds the `mrm-detect` command (no dependencies)
-pip install ".[pdf]"     # PDF support (pypdf)
-pip install ".[email]"   # Outlook .msg support (olefile)
-pip install ".[ocr]"     # photos/screenshots on Windows/Linux (RapidOCR); macOS needs nothing
-pip install ".[lm]"      # language-model ensemble (torch + transformers; ~3.5 GB of models downloaded on first use)
-pip install ".[all]"
-```
 
 ## Usage
 
@@ -144,8 +165,8 @@ for seg in result.segments:
 
 Held-out documents never used in training are split by document, and every
 human document predates ChatGPT. Full tables are in
-[`benchmarks/results/`](benchmarks/results). Reproduce them with the
-commands in [benchmarks/README.md](benchmarks/README.md).
+[`benchmarks/results/`](https://github.com/anirudhjayaraman/mrm-ai-detector/tree/main/benchmarks/results). Reproduce them with the
+commands in [benchmarks/README.md](https://github.com/anirudhjayaraman/mrm-ai-detector/blob/main/benchmarks/README.md).
 
 ### Head-to-head on 331 held-out documents (102 in-domain MRM documents)
 
@@ -184,7 +205,7 @@ OIG). Three AI samples are Claude-written MRM text and one is Qwen2.5-written.
 | mrm-detector (stdlib) | 1 / 4 | 0 / 4 |
 | Sapling | 1 / 4 | 2 / 4 (SR 11-7: 95.5%, FHFA OIG: 71.9%) |
 
-Per-sample numbers are in [`benchmarks/results/web_comparison.md`](benchmarks/results/web_comparison.md).
+Per-sample numbers are in [`benchmarks/results/web_comparison.md`](https://github.com/anirudhjayaraman/mrm-ai-detector/blob/main/benchmarks/results/web_comparison.md).
 
 ### What this means in practice
 
@@ -305,6 +326,8 @@ examples/             public-domain human text, AI-written and mixed examples
 ## Development
 
 ```bash
+git clone https://github.com/anirudhjayaraman/mrm-ai-detector
+cd mrm-ai-detector
 pip install -e ".[dev]"
 pytest
 ruff check mrm_ai_detector tests
