@@ -1,0 +1,229 @@
+{
+  "model": "mrm-handcrafted-v1",
+  "mrm": {
+    "documents": 51,
+    "segments": 299,
+    "share_mae": 0.202,
+    "share_spearman": 0.655,
+    "prob_spearman": 0.643,
+    "by_true_share": {
+      "0%": {
+        "documents": 7,
+        "mean_true_share": 0.0,
+        "mean_pred_share": 0.0,
+        "mean_doc_p": 0.095,
+        "doc_flag_rate": 0.0,
+        "any_segment_flag_rate": 0.0
+      },
+      "1-35%": {
+        "documents": 13,
+        "mean_true_share": 0.22,
+        "mean_pred_share": 0.201,
+        "mean_doc_p": 0.37,
+        "doc_flag_rate": 0.154,
+        "any_segment_flag_rate": 0.846
+      },
+      "35-70%": {
+        "documents": 16,
+        "mean_true_share": 0.527,
+        "mean_pred_share": 0.305,
+        "mean_doc_p": 0.671,
+        "doc_flag_rate": 0.562,
+        "any_segment_flag_rate": 0.75
+      },
+      "70-100%": {
+        "documents": 15,
+        "mean_true_share": 0.934,
+        "mean_pred_share": 0.595,
+        "mean_doc_p": 0.796,
+        "doc_flag_rate": 0.733,
+        "any_segment_flag_rate": 0.867
+      }
+    },
+    "segment_auc_ai_vs_human": 0.877,
+    "segment_fpr_human": 0.037,
+    "segment_tpr_ai": 0.64,
+    "segment_by_op": {
+      "rewrite": {
+        "segments": 30,
+        "flag_rate": 0.333,
+        "auc_vs_human": 0.75
+      },
+      "notes": {
+        "segments": 40,
+        "flag_rate": 0.775,
+        "auc_vs_human": 0.935
+      },
+      "continue": {
+        "segments": 30,
+        "flag_rate": 0.7,
+        "auc_vs_human": 0.898
+      },
+      "summary": {
+        "segments": 25,
+        "flag_rate": 0.72,
+        "auc_vs_human": 0.911
+      }
+    },
+    "segment_polish_flag_rate": 0.0,
+    "segment_by_generator": {
+      "claude": {
+        "ai_segments": 8,
+        "tpr": 0.0,
+        "auc": 0.181
+      },
+      "gemma9b": {
+        "ai_segments": 37,
+        "tpr": 0.595,
+        "auc": 0.899
+      },
+      "llama8b": {
+        "ai_segments": 21,
+        "tpr": 0.714,
+        "auc": 0.944
+      },
+      "qwen7b": {
+        "ai_segments": 59,
+        "tpr": 0.729,
+        "auc": 0.914
+      }
+    }
+  },
+  "apt": {
+    "human_original": {
+      "n": 120,
+      "mean_p": 0.206,
+      "flag_rate": 0.017
+    },
+    "polished": {
+      "extreme_minor": {
+        "n": 36,
+        "mean_p": 0.227,
+        "flag_rate": 0.028,
+        "auc_vs_human": 0.525
+      },
+      "minor": {
+        "n": 36,
+        "mean_p": 0.239,
+        "flag_rate": 0.028,
+        "auc_vs_human": 0.54
+      },
+      "slight_major": {
+        "n": 36,
+        "mean_p": 0.417,
+        "flag_rate": 0.111,
+        "auc_vs_human": 0.702
+      },
+      "major": {
+        "n": 36,
+        "mean_p": 0.459,
+        "flag_rate": 0.278,
+        "auc_vs_human": 0.725
+      },
+      "1%": {
+        "n": 36,
+        "mean_p": 0.139,
+        "flag_rate": 0.028,
+        "auc_vs_human": 0.41
+      },
+      "5%": {
+        "n": 36,
+        "mean_p": 0.145,
+        "flag_rate": 0.0,
+        "auc_vs_human": 0.418
+      },
+      "10%": {
+        "n": 36,
+        "mean_p": 0.278,
+        "flag_rate": 0.056,
+        "auc_vs_human": 0.582
+      },
+      "20%": {
+        "n": 36,
+        "mean_p": 0.161,
+        "flag_rate": 0.028,
+        "auc_vs_human": 0.419
+      },
+      "35%": {
+        "n": 36,
+        "mean_p": 0.328,
+        "flag_rate": 0.083,
+        "auc_vs_human": 0.65
+      },
+      "50%": {
+        "n": 36,
+        "mean_p": 0.323,
+        "flag_rate": 0.028,
+        "auc_vs_human": 0.648
+      },
+      "75%": {
+        "n": 36,
+        "mean_p": 0.391,
+        "flag_rate": 0.194,
+        "auc_vs_human": 0.681
+      }
+    }
+  },
+  "mixset": {
+    "2llama_complete": {
+      "n": 50,
+      "mean_p": 0.419,
+      "flag_rate": 0.18
+    },
+    "2llama_humanize": {
+      "n": 49,
+      "mean_p": 0.285,
+      "flag_rate": 0.02
+    },
+    "2llama_polish_sentence": {
+      "n": 50,
+      "mean_p": 0.412,
+      "flag_rate": 0.16
+    },
+    "2llama_polish_token": {
+      "n": 50,
+      "mean_p": 0.286,
+      "flag_rate": 0.12
+    },
+    "2llama_rewrite": {
+      "n": 50,
+      "mean_p": 0.461,
+      "flag_rate": 0.2
+    },
+    "MGT_polish_sentence": {
+      "n": 50,
+      "mean_p": 0.592,
+      "flag_rate": 0.3
+    },
+    "MGT_polish_token": {
+      "n": 50,
+      "mean_p": 0.558,
+      "flag_rate": 0.26
+    },
+    "gpt4_complete": {
+      "n": 50,
+      "mean_p": 0.387,
+      "flag_rate": 0.22
+    },
+    "gpt4_humanize": {
+      "n": 50,
+      "mean_p": 0.145,
+      "flag_rate": 0.0
+    },
+    "gpt4_polish_sentence": {
+      "n": 50,
+      "mean_p": 0.346,
+      "flag_rate": 0.08
+    },
+    "gpt4_polish_token": {
+      "n": 50,
+      "mean_p": 0.182,
+      "flag_rate": 0.06
+    },
+    "gpt4_rewrite": {
+      "n": 50,
+      "mean_p": 0.392,
+      "flag_rate": 0.14
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+ "source": "gao_16_269",
+ "family": "validation_report",
+ "planned_share": 1.0,
+ "generator": "claude-opus-5-5",
+ "paragraphs": [
+  {
+   "text": "Education officials told us that they prepare sensitivity analyses of certain assumptions when requested by the department's financial statement auditor, and they provided an analysis covering three assumptions: interest rates, default rates and collection rates. The documentation did not explain why only these three assumptions were tested, what procedures were followed, how often the analysis is performed, or who prepared and approved it. With respect to policies and procedures, officials provided a high-level flowchart of the subsidy cost estimation process and a document used to support management's approval of updates to cash flow model assumptions, but they confirmed that the department has no documented policies and procedures for the process as a whole.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 142
+  },
+  {
+   "text": "Based on our review of supporting documentation and interviews with the Education officials who prepare and review subsidy cost estimates, we found that Education addressed some of the key elements of the estimation process but did not adequately document them, which limits assurance that they are carried out as intended. As shown in table 3, Education also lacked documented and approved policies and procedures for estimating subsidy costs for the Direct Student Loan Program. Officials acknowledged that documenting the roles and responsibilities of staff involved could be helpful but said they considered the process too complex to capture in written procedures. In our view, the absence of documented procedures increases the risk that other key elements will be performed inconsistently, omitted or insufficiently documented—a risk borne out by Education's inability to provide adequate documentation for several of the elements we requested—and raises the likelihood of errors in the program's cash flow calculations. Education officials told us, for example, that because of known problems with the program's calculated subsidy cost estimates, they had manually adjusted estimated cash flows before submitting reestimates for the 2016 President's Budget. Partly in response to these problems, Education has entered into an interagency agreement with the Department of the Treasury to replace the existing cash flow model with a more comprehensive loan-level model. Officials said that deciding how much supporting documentation to prepare requires balancing the value of documentation against the demands on limited staff resources.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 305
+  },
+  {
+   "text": "Without a complete set of management-approved procedures for estimating subsidy costs, however, the institutional knowledge on which Education depends to estimate the cost of the Direct Student Loan Program is at risk of being lost. Documenting the key elements of the estimation process would help management oversee the program in line with internal control standards and would strengthen Education's support for its subsidy cost estimates.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 76
+  },
+  {
+   "text": "We provided a draft of this report to USDA, HUD and Education for review and comment. Because the report contains no recommendations to USDA, USDA had no comments. HUD and Education each concurred with our recommendations and described actions planned or under way to implement them; their written comments are summarized below and reprinted in appendixes II and III. HUD also provided technical comments, which we incorporated where appropriate. Regarding our recommendation that HUD develop detailed policies and procedures for its subsidy cost estimation process, HUD stated that it has awarded a new contract that includes documentation of the MMI cash flow model and the related estimation process, and that it is preparing a solicitation for a contractor to perform independent verification and validation of the model. We believe these actions, if fully implemented, will address our recommendation.",
+   "label": "ai",
+   "op": "continue",
+   "orig_words": 165
+  },
+  {
+   "text": "Please contact me at (202) 512-9377 or clarkce@gao.gov if you or your staff have any questions about this report. Contact points for our Offices of Congressional Relations and Public Affairs appear on the last page of the report, and the GAO staff who made key contributions are listed in appendix IV.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 55
+  },
+  {
+   "text": "The GSM-102 program, by contrast, involves a relatively small number of loans with much larger average amounts. For each of the three programs, we met with the CCC, FHA and Education officials responsible for preparing and approving subsidy cost estimates to discuss how the estimates are developed, and we requested and reviewed supporting documentation for each key element of the estimation process. We also reviewed the fiscal year 2015 financial statements and related budget information for CCC, FHA and Education for background on the programs. We did not assess the reasonableness of the subsidy cost estimates or reestimates, or of the data and assumptions underlying them. We conducted this performance audit from June 2014 to July 2016 in accordance with generally accepted government auditing standards, which require that we plan and perform the audit to obtain sufficient, appropriate evidence to provide a reasonable basis for our findings and conclusions. We believe the evidence obtained meets that standard.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 182
+  }
+ ]
+}

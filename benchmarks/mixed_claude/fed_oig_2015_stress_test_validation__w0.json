@@ -1,0 +1,115 @@
+{
+ "source": "fed_oig_2015_stress_test_validation",
+ "family": "supervisory_findings",
+ "planned_share": 0.15,
+ "generator": "claude-opus-5-5",
+ "paragraphs": [
+  {
+   "text": "Federal Reserve have typically been characterized as matters requiring immediate attention or as matters requiring attention. The report resulting from the governance review detailed six recommendations to address the findings, including a recommendation to develop a formal gap analysis and remediation plan with specific timelines and resources to address all model risk management issues. We concur with the recommendation and believe that the development of this plan should be a high priority for the Federal Reserve’s supervisory stress testing program.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "13. Matters requiring immediate attention refers to matters of significant importance or urgency, arising from an examination, inspection, or any other supervisory activity, that the Federal Reserve requires banking organizations to address immediately. Matters requiring attention refers to matters that are important and that the Federal Reserve expects a banking organization to address over a reasonable period of time, but the timing need not be immediate.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "As noted previously, the Director of BS&R approved a plan to transition the model validation function from a contingent staffing approach to an approach that will rely on dedicated reviewers along with some supplemental reviewers. We believe that this transition will improve the effectiveness of the Federal Reserve’s model validation program; however, we identified certain risks related to staffing and performance management that the new staffing approach may not mitigate. These risks include insufficient performance feedback provided to supplemental reviewers, key-personnel dependencies, and inadequate scrutiny of models. SR Letter 11-7 requires that appropriate resources be assigned to model validation and states that model validation should be performed by staff with appropriate incentives, competence, and influence. If the risks identified above are not mitigated, they may hinder the model validation function’s ability to meet the model validation staffing standards outlined in SR Letter 11-7.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "According to SR Letter 11-7, managers can support appropriate incentives in validation through performance evaluation standards that link directly to the quality of model validation and the degree of critical, unbiased review. After the 2013–2014 supervisory stress test, the MVU collected information on each reviewer’s performance and assigned an evaluation rating to the reviewer. The lowest rating precluded the MVU from inviting the reviewer to participate in model validation activities the following year, while the next-lowest rating on the scale allowed the MVU to invite the reviewer back under exceptional circumstances and if feedback to improve was provided. However, the MVU did not formally share the performance feedback with the reviewers directly or formally share the feedback with the reviewer’s day-to-day supervisor for discussion as part of that person’s annual review. Therefore, reviewers might not have been in a position to improve performance on a cycle-to-cycle basis. In one case, a reviewer with a rating that warranted feedback prior to participating the following year indicated that he received no formal performance feedback concerning his model validation work. We determined that this individual participated in model validation the following year.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "A senior validation official told us that, under the new staffing approach, staff assigned to model validation on a dedicated basis will receive feedback on their validation work directly. The official did not, however, identify any plan for providing feedback to the supplemental reviewers who will continue to support the dedicated staff. Because the model validation function is moving to validation on a continuous basis, we believe it should assess how often, and at what points in the cycle, performance feedback is given to supplemental reviewers, so that weaknesses can be corrected before those reviewers are assigned to subsequent validations.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 87
+  },
+  {
+   "text": "According to some reviewers, there is a limited pool of talent from which the Federal Reserve can draw the expertise necessary to validate certain models. For example, one reviewer noted that there are very few individuals across the entire Federal Reserve System with the expertise required to validate the model this reviewer was assigned to. This reviewer added that a colleague with such experience was planning to retire in the near future, which would reduce the already small number of people able to validate that model. Another reviewer with subject-matter expertise in certain banking regulations noted that only a core group of individuals possesses the specialized expertise to perform validation of certain models. Such key-personnel dependencies could heighten the Federal Reserve’s vulnerability to the loss of model validation capabilities in the event of unforeseen departures.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "During our review, we sought to determine the process by which the MVU identifies reviewers with specialized expertise to perform model validation. A senior validation official noted that historically, the MVU has leveraged Federal Reserve System committees to help identify and recruit reviewers with the necessary skills to validate certain models. According to BS&R, these committees may have broader knowledge of the relative expertise of staff members across the Federal Reserve System than individual reviewers. However, we determined that the MVU does not currently conduct a formal assessment of the expertise required to validate each model or maintain an inventory to track the skills and expertise of reviewers. The senior validation official acknowledged that the MVU can improve its tracking of reviewer expertise across the system, and that the MVU would benefit from tracking this information.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "In our opinion, without a formal method for assessing the expertise required to validate each model as well as for tracking the skills and expertise of reviewers, the MVU may not be aware of which models are vulnerable to key-personnel dependency risk, which may hinder the MVU’s ability to mitigate that risk. We believe that tracking such information would enhance the MVU’s ability to implement measures for mitigating such risks, such as performing contingency planning, facilitating job shadowing, or bolstering efforts to recruit staff with highly specialized skills.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "Many of the reviewers we interviewed indicated that they validated the same model during consecutive supervisory stress testing cycles. Six of the 10 reviewers we interviewed noted the importance of obtaining fresh scrutiny to ensure the effective challenge of models over time. Many reviewers suggested that the model validation function should rotate reviewers across models every few years to ensure that the models receive fresh scrutiny over time.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "Rotating reviewers among models may prove challenging as the model validation function transitions from a contingent staffing approach, with approximately 85 reviewers participating in model validation, to a new staffing approach that includes far fewer permanently staffed and supplemental reviewers. It may also present a challenge for models that require highly specialized expertise from which there is a limited pool of talent to draw.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "A senior validation official noted that because the model validation function has recently begun to recruit a permanent staff of new reviewers, ensuring that reviewers provide fresh scrutiny is not an immediate challenge facing the model validation function. However, that official agreed that it will be important to plan to address this risk over time. In our opinion, the model validation function would benefit from evaluating options to ensure that models receive fresh scrutiny in the near term. If the model validation function does not plan to address this issue, it faces the risk that reviewers may provide insufficient scrutiny to models over time and that models may not receive the effective challenge prescribed by SR Letter 11-7.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "We believe that the implementation of the new staffing approach is an important step toward addressing weaknesses in the Federal Reserve’s model validation program. However, the new staffing approach may not mitigate certain risks and issues associated with validation staffing and performance management, such as insufficient feedback provided to supplemental reviewers, key-personnel dependencies, and inadequate scrutiny of models. We believe that as the model validation function transitions to an alternative staffing approach, the MVU and its successor, the MVOC, should take steps to mitigate these risks. If they are not addressed, these risks may hinder the model validation function’s ability to meet the model validation staffing standards outlined in",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "In response to recommendation 1, management states that it will identify and document the skills required to validate each model and will use that information in its hiring and retention efforts. Management also states that, compared with the prior staffing approach, the model validation function will track the expertise of available staff more formally under the new approach. Finally, management notes that the new staffing approach will substantially reduce reliance on supplemental reviewers and, as a result, expects a broader pool of staff to be available to serve in that role.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 103
+  },
+  {
+   "text": "In its response to recommendation 3, management states that the new staffing approach will largely address this recommendation, as work will primarily be performed by permanent staff who will receive formal performance feedback at least annually. Management also notes that the Board has recently developed a new process to evaluate the performance of staff who work on Systemwide activities, which will be used to evaluate supplemental reviewers going forward.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "The contingent staffing approach hindered reviewers’ ability to validate late-stage changes, which are changes implemented by model developers after the validation period concludes. SR Letter 11-7 requires that material changes to models undergo independent validation. As noted previously, to address this risk and other shortcomings of the contingent staffing approach, the model validation function is transitioning to a new staffing approach with dedicated reviewers who will be available to conduct validation year-round. However, the new staffing approach will only partially address the risks associated with late-stage changes. The model validation function can take steps to further mitigate the risks associated with such changes and better ensure compliance with the model risk management standards outlined in SR Letter 11-7. If late-stage changes are not independently validated, the risk of error and reputational damage posed by the reliance on models to implement supervisory stress testing is significantly heightened.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "Key findings and conclusions",
+   "label": "heading",
+   "op": "heading"
+  },
+  {
+   "text": "The model validation function's transition from a contingent staffing approach to one built around dedicated reviewers is an important step toward addressing weaknesses in the Federal Reserve's supervisory stress test model validation program. It does not, on its own, resolve three risks that we identified.",
+   "label": "ai",
+   "op": "summary"
+  },
+  {
+   "text": "First, performance feedback has been inconsistent. After the 2013–2014 cycle, the MVU rated each reviewer's performance but did not formally share those ratings with the reviewers or their supervisors, and at least one reviewer whose rating warranted feedback returned the following year without receiving any. The new approach provides feedback to dedicated staff, but there is no plan yet for supplemental reviewers.",
+   "label": "ai",
+   "op": "summary"
+  },
+  {
+   "text": "Second, the program depends on a small number of specialists. Reviewers described a limited pool of people able to validate certain models, and the MVU neither formally assesses the expertise each model requires nor tracks the skills of available reviewers, which leaves it unable to see where key-personnel risk is concentrated.",
+   "label": "ai",
+   "op": "summary"
+  },
+  {
+   "text": "Third, models may not receive fresh scrutiny. Six of the 10 reviewers we interviewed stressed the value of rotating reviewers, yet many had validated the same model in consecutive cycles, and rotation will be harder with far fewer reviewers than the roughly 85 who participated under the contingent approach.",
+   "label": "ai",
+   "op": "summary"
+  },
+  {
+   "text": "Management's responses—documenting the skills needed for each model, tracking staff expertise, and evaluating supplemental reviewers through a new Systemwide process—address these concerns in part. Late-stage model changes remain only partially covered by independent validation and warrant further attention.",
+   "label": "ai",
+   "op": "summary"
+  }
+ ]
+}

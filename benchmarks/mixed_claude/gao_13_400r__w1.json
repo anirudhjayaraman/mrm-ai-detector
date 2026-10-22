@@ -1,0 +1,73 @@
+{
+ "source": "gao_13_400r",
+ "family": "validation_report",
+ "planned_share": 0.3,
+ "generator": "claude-opus-5-5",
+ "paragraphs": [
+  {
+   "text": "• Seller-funded down-payment assistance. The annual report noted that Congress prohibited the use of seller-funded down-payment assistance starting in January 2009. Borrowers who make small or no down payments are more likely to default on mortgage obligations. The report further noted that the effect of loans with seller-funded down-payment assistance remains measureable on the insurance fund. They are expected to cost the insurance fund more than $15 billion. The actuary estimated that if FHA had not participated in seller-funded down payment loans, the economic value of the insurance fund would be positive $1.77 billion. Problems associated with these loans were well-documented. A March 2005 HUD contractor study found that property sellers who provided down payment assistance through nonprofits often raised sale prices of the homes involved to recover the required payments that went to the organizations.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "We have also reported on the risks posed by FHA-insured loans that relied on seller-funded down-payment assistance (GAO-06-24), finding that such loans were associated with inflated sale prices and defaulted more often than comparable loans without this assistance. FHA issued a rule prohibiting seller-funded assistance in October 2007, but the courts struck the rule down on procedural grounds; as noted above, Congress subsequently prohibited the practice.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 71
+  },
+  {
+   "text": "As the capital ratio declined, the insurance fund's condition also worsened from a federal budgetary perspective. Each year FHA estimates the subsidy costs of its loan insurance program and reestimates, or updates, its prior estimates. Historically, FHA estimated that the program had a negative subsidy—that is, estimated cash inflows exceeded expected cash outflows. On the basis of these estimates, FHA accumulated substantial balances in a capital reserve account, which holds reserves in excess of those needed for estimated credit subsidy costs and helps cover unanticipated increases in those costs, such as higher-than-expected claims. Funds needed to cover estimated subsidy costs are held in the insurance fund's financing account. (Balances in the capital reserve and financing accounts may differ from the fund's economic value as defined in the actuarial review, in part because the Federal Credit Reform Act requires the Office of Management and Budget to use certain economic assumptions for the budget, which the independent actuarial review may not use.) In recent years, however, FHA has covered large upward reestimates, reflecting higher subsidy costs and lower revenues, by transferring funds from the capital reserve account to the financing account. As a result, the balance in the capital reserve account fell sharply, from $19.3 billion at the end of 2008 to an estimated $3.3 billion at the end of 2012 (see next fig.), while the financing account held approximately $35.1 billion at the end of 2012, about three times its balance at the end of 2008. End-of-year Balances in the Insurance Fund's Capital Reserve Account, 2008-2012",
+   "label": "polish",
+   "op": "polish",
+   "orig_words": 264
+  },
+  {
+   "text": "If the reserve account were to be depleted, FHA would need to draw on permanent and indefinite budget authority to cover additional increases in estimated credit subsidy costs. The President’s budget for 2013 contained a $9.3 billion upward reestimate in FHA’s credit subsidy costs for the insurance fund. The budget indicated that the reestimate would deplete FHA’s capital reserve account in 2012, potentially causing FHA to draw on $688 million in permanent and indefinite budget authority. However, according to FHA, the agency ultimately did not need to draw on this authority because of premium increases and higher-than-anticipated loan volumes. In its 2012 report to Congress, HUD noted that information (the insurance fund valuation) in the forthcoming President’s budget for 2014 will determine the adequacy of the capital balance in the insurance fund and the need to draw on permanent and indefinite budget authority in the current fiscal year. The President’s budget is expected to be released in the spring of 2013.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "In recent years, FHA took steps to tighten its underwriting standards, including raising down-payment requirements. Specifically: • In September 2009, FHA announced changes to its streamline refinance loans that, according to FHA, have reduced early payment defaults. • In October 2010, FHA increased down-payment requirements for borrowers with lower credit scores. Borrowers with credit scores of 500-579 must make a down payment of at least 10 percent. Furthermore, anyone with a credit score below 500 is ineligible for an FHA-insured loan. • In February 2012, FHA published a rule proposing to reduce allowable seller contributions at closing, thereby helping to ensure that buyers put more of their own funds into the home purchase. (As noted previously, Congress eliminated seller-funded down payments in • In January 2013, FHA o Announced that it would raise its minimum down-payment requirement from 3.5 to 5.0 percent for loans of $625,500 or more. FHA also increased the annual premium for these loans to the statutory maximum (see Insurance Premiums below). o Announced that it will require manual underwriting on loans for borrowers with credit scores below 620 and debt-to-income ratios above 43 percent.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "Down-payment requirements and credit scores are important tools to help offset the risk of borrower default. For example, down-payment requirements affect the loan-to-value (LTV) ratio—the mortgage amount divided by the value of the home. LTV ratios are important because of the direct relationship that exists between the amount of equity borrowers have in their homes and the likelihood of default. In 2005, we found that mortgages with higher LTV ratios (those with smaller down payments, or little equity) and lower credit scores generally were riskier than mortgages with lower LTV ratios and higher credit scores (see GAO-05-194).",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "These changes are intended to reduce the share of new loans made to borrowers with the highest risk of default while preserving access to credit for the first-time and lower-income homebuyers FHA has traditionally served. Because the effect of tighter underwriting standards on loan performance emerges only over several years, it is too early to determine how much these changes will improve the performance of recent loan cohorts or the financial condition of the insurance fund. FHA will need to monitor the early payment default and claim rates of loans originated under the revised standards to assess whether further adjustments are warranted.",
+   "label": "ai",
+   "op": "continue",
+   "orig_words": 72
+  },
+  {
+   "text": "Premiums paid by borrowers support FHA's insurance fund. FHA is authorized to charge a single up-front premium and an annual premium based on the remaining insured principal balance; the annual premium varies with the size of the down payment, the loan amount and the mortgage term. Borrowers may finance the up-front premium, along with some of their closing costs, as part of the loan.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 74
+  },
+  {
+   "text": "1. Effective April 1, 2013, FHA will increase the annual insurance premiums most borrowers pay between 0.05 and 0.10 percentage points. Current annual premiums range from 0 to 1.5 percent. The annual premium for loans of $625,500 or more will be set at the statutory maximum (see next table). FHA also will raise annual premiums on smaller loans, but these premiums will remain below the maximum. FHA expects that the premium increases—$13 per month for the average insured borrower—will add significant revenue to the insurance fund and help limit FHA’s market share, while at the same time being modest enough so that they will not affect borrower access to credit or threaten the housing recovery.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "FHA can continue to raise up-front and annual premiums to the statutory maximums (generally 3 percent of the original insured principal mortgage amount for up-front premiums and between 1.5 and 1.55 percent of the remaining insured principal amount for annual premiums). However, as we reported in June 2007, raising premiums could cause lower-risk borrowers to choose more competitive (lower priced) loans from other sources, leaving FHA to insure relatively more higher-risk borrowers (see GAO-07-708).",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "Another option for strengthening the insurance fund would be to reduce the share of each loan that FHA insures. FHA currently insures up to 100 percent of a lender's loss on a defaulted loan, whereas the Department of Veterans Affairs' home loan program, for example, provides more limited coverage. Lowering FHA's coverage would shift part of the credit risk to lenders, which in principle would encourage more careful underwriting and reduce losses to the fund. At the same time, lenders bearing a larger share of potential losses could respond by charging higher interest rates or by making fewer loans to riskier borrowers, which could reduce access to credit for the populations FHA is intended to serve. Any such change would also require legislative action.",
+   "label": "ai",
+   "op": "continue",
+   "orig_words": 113
+  },
+  {
+   "text": "FHA relies on private lenders to underwrite the loans it insures and on private appraisers to appraise the value of the homes being financed. In November 2011 (GAO-12-15), we reported that FHA had made changes to several processes intended to help ensure that these lenders and appraisers followed its policies and procedures. • FHA enhanced the criteria it uses to select loans for post-endorsement technical reviews of underwriting quality. Since May 2010, the agency has considered high-risk borrower or loan characteristics. For example, loans to borrowers with low credit scores and certain types of refinanced loans could merit review. • FHA began using a more risk-based approach to select lenders and appraisers for review. For example, FHA increased the number of risk factors used to target lenders for review. The risk factors included loan volume, product type, process (direct endorsement or lender insurance), performance, and peer group performance. In addition, since March 2010 FHA has considered factors such as the appraiser’s volume and past sanctions, as well as the type of property being appraised, when targeting appraisers for review.",
+   "label": "human",
+   "op": "human"
+  }
+ ]
+}

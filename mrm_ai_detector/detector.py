@@ -13,8 +13,9 @@ from . import __version__
 from .features import REGISTRY, extract
 from .features.neural import NEURAL_FEATURES, NeuralConfig, NeuralScorer
 from .ingest import OCR_MARKER, read_document
+from .provenance import inspect_file, inspect_text, unusual_char_segments
 from .scoring import ScoringModel
-from .text import TextUnit, build_unit, resample_sentences, segment_document
+from .text import TextUnit, build_unit, is_prose, resample_sentences, segment_document
 
 logger = logging.getLogger(__name__)
 
@@ -42,6 +43,7 @@ class SegmentResult:
     flagged: bool
     text: str
     signals: List[Signal] = field(default_factory=list)
+    scored: bool = True  # False for tables, caption lists and other non-prose chunks
 
 
 @dataclass
@@ -58,6 +60,7 @@ class DocumentResult:
     signals: List[Signal]
     model: str
     warnings: List[str] = field(default_factory=list)
+    provenance: List[str] = field(default_factory=list)  # file/typography traces; never affect the probability
     elapsed_s: float = 0.0
     detector_version: str = __version__
 
@@ -118,7 +121,14 @@ class Detector:
 
     # ------------------------------------------------------------------
     def analyze_file(self, path: Union[str, Path]) -> DocumentResult:
-        return self.analyze_text(read_document(path), source=str(path))
+        result = self.analyze_text(read_document(path), source=str(path))
+        hints = [str(h) for h in inspect_file(path)]
+        if hints:
+            segs = unusual_char_segments([s.text for s in result.segments])
+            if segs and any("keyboards rarely produce" in h for h in hints):
+                hints.append(f"[info] those characters occur in segment(s) {_ranges(segs)}")
+        result.provenance = hints
+        return result
 
     def analyze_text(self, text: str, source: str = "<text>") -> DocumentResult:
         start = time.perf_counter()
@@ -151,19 +161,24 @@ class Detector:
         seg_results: List[SegmentResult] = []
         for seg, vals in zip(segments, seg_values):
             p, c = model.score(vals, seg.unit.word_count)
+            prose = is_prose(seg.unit)
             seg_results.append(
                 SegmentResult(
                     index=seg.index,
                     section=seg.section,
                     word_count=seg.unit.word_count,
                     probability=p,
-                    flagged=p >= model.effective_segment_threshold,
+                    flagged=prose and p >= model.effective_segment_threshold,
                     text=seg.text,
                     signals=_top_signals(c, vals, k=3),
+                    scored=prose,
                 )
             )
-        flagged_words = sum(s.word_count for s in seg_results if s.flagged)
-        ai_share = flagged_words / max(1, sum(s.word_count for s in seg_results))
+        scored = [s for s in seg_results if s.scored]
+        ai_share = sum(s.word_count for s in scored if s.flagged) / max(1, sum(s.word_count for s in scored))
+        skipped = len(seg_results) - len(scored)
+        if skipped:
+            warnings.append(f"{skipped} of {len(seg_results)} segments are tables, caption lists or other non-prose and were not scored")
 
         ci_low = ci_high = None
         if self.bootstrap and len(unit.sentences) >= 10:
@@ -191,6 +206,7 @@ class Detector:
             signals=signals,
             model=model.name,
             warnings=warnings,
+            provenance=[str(h) for h in inspect_text(text)],  # analyze_file replaces this with the fuller file check
             elapsed_s=round(time.perf_counter() - start, 3),
         )
 
@@ -217,7 +233,7 @@ def _verdict(prob: float, ai_share: float, segments: List[SegmentResult], model:
     n_flagged = sum(1 for s in segments if s.flagged)
     if n_flagged and ai_share >= 0.15:
         # Localised AI-like sections: only call it "mixed" with enough segments to contrast.
-        return MIXED if len(segments) >= 3 else INCONCLUSIVE
+        return MIXED if sum(s.scored for s in segments) >= 3 else INCONCLUSIVE
     if prob <= model.human_threshold:
         return LIKELY_HUMAN
     return INCONCLUSIVE
@@ -235,3 +251,15 @@ def _weighted_mean(rows: List[Dict[str, Optional[float]]], weights: List[int], k
         total = sum(w for _, w in pairs)
         out[key] = sum(v * w for v, w in pairs) / total if total else None
     return out
+
+
+def _ranges(idx: List[int]) -> str:
+    """[3, 4, 5, 9] -> '3-5, 9'."""
+    out, start = [], None
+    for i, v in enumerate(idx):
+        if start is None:
+            start = v
+        if i + 1 == len(idx) or idx[i + 1] != v + 1:
+            out.append(f"{start}" if start == v else f"{start}-{v}")
+            start = None
+    return ", ".join(out)

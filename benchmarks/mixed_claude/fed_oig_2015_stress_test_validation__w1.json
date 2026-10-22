@@ -1,0 +1,85 @@
+{
+ "source": "fed_oig_2015_stress_test_validation",
+ "family": "supervisory_findings",
+ "planned_share": 0.5,
+ "generator": "claude-opus-5-5",
+ "paragraphs": [
+  {
+   "text": "As noted previously, the MVU’s contingent staffing approach relied on reviewers who participated in model validation on a part-time basis and during a fixed time period. As such, model validation could only be conducted during the specific time period that reviewers were allocated for validation activities; after this period concluded, the reviewers returned to their day- to-day responsibilities. Developers may seek MOG approval to make limited model changes after the validation period concludes, sometimes in response to validation findings. These late-stage changes may be necessary to improve the model’s conceptual soundness or data accuracy. We understand that it is important for the developers to retain the flexibility to make such changes when necessary.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "Several of the reviewers we interviewed, however, told us that they were not able to review late-stage changes before the affected models were implemented. Some said they examined those changes only during the following year's supervisory stress testing exercise; others were not aware that their assigned models had been changed at all. When material model changes are not validated before use, the Federal Reserve faces a greater likelihood of relying on models that are inaccurate or that do not perform as intended.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 79
+  },
+  {
+   "text": "The MVU has acknowledged that its inability to validate late-stage changes is a significant weakness in meeting the requirements of SR Letter 11-7. Its own lessons-learned assessment found that models that underwent substantial changes after the validation review period carried a significantly elevated risk of error, because too little time was available to test and validate those changes. A senior MVU official told us that the MVU believes the implementation of late-stage changes should be carefully controlled.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 104
+  },
+  {
+   "text": "A senior MOG official stated that the MOG has taken steps to address this concern by enhancing the controls around the communication and approval of late-stage changes. These enhanced controls require model developers to provide a detailed description of late-stage changes to MOG management for review and approval prior to implementing the model changes. The MOG then provides the MVU with an exceptions log, detailing a description of each model change; however, this information is communicated to the MVU after the models are implemented.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "The move to a staffing approach built around dedicated reviewers gives the MVU an opportunity to reduce the risks posed by late-stage model changes. Because some reviewers will be assigned to the MVU permanently, they should be available to validate model changes at any point in the supervisory stress testing cycle. At present, however, neither the MOG nor the MVU has a formal process for deciding which late-stage changes are material and therefore require validation. In addition, changes made immediately before implementation may still leave too little time for validation, even with dedicated reviewers in place. The MOG and the MVU should address these gaps in a way that preserves developers' ability to refine models late in the cycle while ensuring that every material late-stage change is validated, as SR Letter 11-7 requires.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 162
+  },
+  {
+   "text": "In its response to recommendation 4, management states that while all models undergo validation, late-stage changes presented a challenge under the previous staffing approach. According to management, under the new staffing approach the Board has developed tools to assess the materiality of late-stage changes and to prioritize changes based on that assessment. Management notes that a new risk management governance committee will continue to develop processes and procedures to address this recommendation.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "Several components called for by the guidelines are missing from the supervisory stress testing model inventory. SR Letter 11-7 assigns responsibility for maintaining a model inventory to a specific party and sets out the information that the inventory must, or should usefully, contain. We attribute the gaps we found in part to the absence of policies and procedures for managing the inventory, including policies that define roles and responsibilities. If the inventory does not hold complete, accurate and current information on supervisory stress testing models, there is a greater risk that those models will not be validated in line with the standards in SR Letter 11-7.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 112
+  },
+  {
+   "text": "Our review of the model inventory supporting supervisory stress testing found that it omits several elements that SR Letter 11-7 identifies as required or useful. The inventory does not clearly record the purpose of each model and the products it is designed for, when the model was last updated, whether it is functioning properly, or the dates of completed and planned validation activities. Some fields that the inventory does contain have been filled in inconsistently; information on model inputs and outputs, for example, was recorded for only a subset of models. The MVU's own governance review in December 2014 likewise concluded that the inventory needed to be enhanced.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 112
+  },
+  {
+   "text": "Our interviews revealed that there was a lack of common understanding between the MVU and the MOG on roles, responsibilities, and accountability for managing the model inventory. According to an MVU official, historically, the MOG had been solely responsible for maintaining the model inventory, which the MVU uses as a basis for conducting model validation. However, a MOG staff member stated that the MOG took full ownership of the model inventory at the start of the 2015–2016 supervisory stress testing cycle. According to that staff member, in previous years, the MOG and the MVU jointly maintained the model inventory. The MOG staff member",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "The staff member also told us that the MOG has no written policies or procedures for managing the model inventory. As a result, roles and responsibilities, the expected frequency of inventory updates, and the expected content of the inventory have not been clearly defined, and the standards in SR Letter 11-7 are not being met.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 57
+  },
+  {
+   "text": "We determined, based on a review of a sample of validation reports, that limitations encountered by reviewers during model validation were often not documented in validation reports. SR Letter 11-7 requires that limitations in model validation be communicated in reports to users, senior management, and other relevant parties. Model validation limitations should be communicated internally to facilitate management’s understanding of the constraints faced during the validation process. We attribute the lack of such documentation to the fact that the validation report templates do not contain a section for documenting model validation limitations. The absence of disclosures in the validation reports regarding such limitations may lead to undue reliance on the results of validation and hinder management’s ability to mitigate those limitations going forward.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "In interviews, reviewers often described limitations that had hampered their validation work, but those limitations rarely appeared in the validation reports. Some reviewers said they had difficulty obtaining or understanding model documentation, and others said that time pressure limited what they could complete. In one case, data access procedures delayed a review team's access to model data and prevented a timely review. In another, the validation team did not document its decision not to validate a vendor model, even though SR Letter 11-7 requires vendor models to be validated with the same rigor as models developed internally; according to one of the assigned reviewers, the team concluded that validation was unnecessary because the model was widely used and therefore trusted, but this rationale was not recorded in the validation report. In total, 9 of the 10 reviewers we interviewed described at least one limitation they had encountered during validation, yet only 3 documented any limitation in the corresponding validation report.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 201
+  },
+  {
+   "text": "Although the model validation report templates generally contain a section for reviewers to document limitations affecting model implementation, we did not identify a similar dedicated section for documenting limitations affecting model validation. Reviewers communicated regularly with points of contact from the Model Validation Coordinating Committee, during which the reviewers may have had the opportunity to communicate validation limitations they encountered. A senior validation official also noted that reviewers have the opportunity to communicate limitations encountered during model validation in their responses to a survey the MVU disseminates after the model validation period concludes. However, we believe that it would be more effective and more useful to managers if limitations encountered during model validation were documented in a clearly identifiable manner directly in the validation reports submitted to management. If limitations are not disclosed in the validation reports in such a",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "Our fieldwork ended in March 2015 and our review included data as of that month. During the reporting phase of our evaluation, we learned that the MVU revised the model validation templates to include a section for reviewers to document limitations affecting model validation. We received and reviewed this documentation in August 2015. In addition to including a section for reviewers to document limitations affecting model validation, the revised template also provides examples of limitations that reviewers might encounter, such as time constraints, insufficient access to data, and insufficient guidance.",
+   "label": "human",
+   "op": "human"
+  }
+ ]
+}

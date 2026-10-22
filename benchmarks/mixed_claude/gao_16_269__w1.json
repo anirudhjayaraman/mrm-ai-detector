@@ -1,0 +1,81 @@
+{
+ "source": "gao_16_269",
+ "family": "validation_report",
+ "planned_share": 0.7,
+ "generator": "claude-opus-5-5",
+ "paragraphs": [
+  {
+   "text": "Under the Federal Credit Reform Act of 1990, agencies must estimate the cost to the government of making or guaranteeing loans. This subsidy cost is the net present value, over the life of the loan, of expected cash outflows from the government—such as loan disbursements and claim payments to lenders—less expected inflows, including repayments, interest, fees and recoveries on defaulted loans, with administrative costs excluded. Agencies estimate future program costs using established methods and the data available at the time. Drawing on budgeting and accounting guidance, GAO identified a set of key elements that an agency's estimation process should include for its estimates to be supported, reliable and reasonable; one example is that management should compare estimated with actual cash flows to detect emerging trends. GAO then assessed how three programs addressed these elements: USDA's Export Credit Guarantee (GSM-102) Program, HUD's Mutual Mortgage Insurance Fund and Education's William D. Ford Federal Direct Loan Program (Direct Student Loan Program). Implementation of the key elements varied considerably across the three agencies.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 236
+  },
+  {
+   "text": "GSM-102 program, HUD and Education lacked policies and procedures and adequate documentation for certain other key elements. Until these key elements are fully addressed, HUD and Education face an increased risk that the institutional knowledge used in the estimation process may be lost and that their estimates may not be supported, reliable and reasonable. Why GAO Did This Study Federal direct loans and loan guarantees outstanding doubled from $1.5 trillion as of September 30, 2008, to $3.0 trillion as of September 30, 2015, as reported in the financial reports of the U.S. government. Given the growing portfolio of outstanding direct loans and loan guarantees, questions have been raised about how agencies estimate the subsidy cost of credit programs. GAO was asked to review the process federal agencies use to develop subsidy cost estimates for credit programs. This report examines (1) the key elements federal agencies should consider when developing subsidy cost estimates and (2) the extent to which selected agencies addressed these key elements when estimating subsidy costs for selected federal credit programs. GAO analyzed budgeting and accounting guidance to identify the key elements agencies should consider when estimating subsidy costs and assessed the estimation processes used for three credit programs against those elements. The three programs were selected on the basis of average loan amount and/or loan volume. What GAO Recommends GAO recommends that HUD and Education develop and document additional procedures related to the subsidy cost estimation process. HUD and Education concurred with GAO's recommendations and described ongoing and planned actions to address them. View GAO-16-269. For more information, contact Cheryl E. Clark at (202) 512-9377 or clarkce@gao.gov.",
+   "label": "polish",
+   "op": "polish",
+   "orig_words": 274
+  },
+  {
+   "text": "This is a work of the U.S. government and is not subject to copyright protection in the United States. The published product may be reproduced and distributed in its entirety without further permission from GAO. However, because this work may contain copyrighted images or other material, permission from the copyright holder may be necessary if you wish to reproduce this material separately.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "Direct loans and loan guarantees are among the main tools the federal government uses to advance policy objectives in areas such as housing, education and small business. Federal credit outstanding roughly doubled over seven years, from about $1.5 trillion at September 30, 2008, to about $3.0 trillion at September 30, 2015. Agencies that extend credit are generally required to estimate each year the net long-term cost to the government of each credit program—its subsidy cost—and to report those estimates in their budgets and financial statements. Because these estimates project future costs using the methods and data available today, managing them is an ongoing task: agencies must update estimates as actual data become available, revise them for program changes, and analyze differences between estimated and actual costs to determine whether the estimation process itself needs to change. Reliable estimates are essential both for managing and budgeting credit programs and for congressional oversight. Given the growth in outstanding direct loans and loan guarantees, you asked us to examine the budgetary treatment of the cost of",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 204
+  },
+  {
+   "text": "federal credit programs and the methods agencies use to estimate their subsidy costs, which we have addressed in two reports. The first, issued in January 2016, analyzed government-wide subsidy cost reestimates for direct loans and loan guarantees approved in fiscal years 2001 through 2014 and explained the implications of estimating credit program costs on a fair value basis rather than under the method prescribed by the Federal Credit Reform Act of 1990 (FCRA). This second report (1) identifies, from relevant guidance, the key elements agencies should consider in developing subsidy cost estimates, and (2) evaluates how well selected agencies addressed those elements for selected credit programs. To compile the key elements, we reviewed budgeting guidance, accounting standards and principles, and published best practices, and we selected elements based on their relevance to producing credible cost estimates. We then used the list to assess the estimation processes for (1) USDA's Commodity Credit Corporation (CCC) Export Credit Guarantee (GSM-102) Program, (2) the Mutual Mortgage Insurance (MMI) Fund of HUD's Federal Housing Administration (FHA), and (3) the Department of",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 225
+  },
+  {
+   "text": "The proposed fair value approach rests on the argument that, beyond the cash flows recognized under the Federal Credit Reform Act of 1990, direct loans and loan guarantees impose a cost on taxpayers, who would require compensation for bearing the aggregate risk of the loan in a comparable private market transaction. GAO, Credit Reform: Current Method to Estimate Credit Subsidy Costs Is More Appropriate for Budget Estimates Than a Fair Value Approach, GAO-16-41 (Washington, D.C.). FHA offers mortgage insurance through its MMI Fund. Mortgage insurance, or a guarantee, is available to eligible home buyers and protects the lender or other mortgage holder, because the federal government commits to pay part or all of a loan's outstanding principal and interest if the borrower defaults. Because “insurance” and “guarantee” have the same meaning in the context of our review, we use “guarantee” throughout this report when referring to the MMI Fund.",
+   "label": "polish",
+   "op": "polish",
+   "orig_words": 162
+  },
+  {
+   "text": "Education's Direct Student Loan Program. We chose the Direct Student Loan Program and the MMI Fund because they are, respectively, the largest federal direct loan program and the largest loan guarantee program, and both are characterized by a high volume of loans with relatively low average loan amounts. To cover a different type of program, we also selected GSM-102, which has a lower volume of loans and larger average loan amounts. For each program, we evaluated the process CCC, FHA and Education used to develop subsidy cost estimates and compared it with our list of key elements. We did not evaluate whether the estimates or reestimates, or the data and assumptions behind them, were reasonable; appendix I describes our scope and methodology in more detail. We conducted this performance audit from June 2014 to July 2016 in accordance with generally accepted government auditing standards. Those standards require that we plan and perform the audit to obtain sufficient, appropriate evidence to provide a reasonable basis for our findings and conclusions based on our audit objectives, and we believe the evidence obtained provides such a basis.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 232
+  },
+  {
+   "text": "Federal credit assistance takes two main forms. A direct loan is a disbursement of government funds to a nonfederal borrower under a contract requiring repayment, with or without interest. A loan guarantee is any guarantee, insurance or other pledge covering payment of all or part of the principal or",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 67
+  },
+  {
+   "text": "interest owed by a nonfederal borrower to a nonfederal lender. At September 30, 2015, 21 federal agencies reported outstanding direct loans or loan guarantees. As figure 1 shows, Education, mainly through the Direct Student Loan Program, held the largest share of outstanding federal direct loans, while HUD, mainly through the MMI Fund's single-family mortgage guarantees, held the largest share of outstanding loan guarantees.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 70
+  },
+  {
+   "text": "Key findings and conclusions",
+   "label": "heading",
+   "op": "heading"
+  },
+  {
+   "text": "Federal credit outstanding doubled between 2008 and 2015, from about $1.5 trillion to about $3.0 trillion, and the reliability of the subsidy cost estimates that agencies report in their budgets and financial statements has become correspondingly more important. Drawing on budgeting and accounting guidance, GAO identified a set of key elements that a subsidy cost estimation process should include—among them documented policies and procedures, support for key assumptions, sensitivity analysis, and regular comparison of estimated with actual cash flows.",
+   "label": "ai",
+   "op": "summary"
+  },
+  {
+   "text": "Applying these elements to three programs selected for their contrasting loan volumes and loan sizes—USDA's GSM-102 Program, HUD's MMI Fund and Education's Direct Student Loan Program—GAO found that implementation varied. The GSM-102 program addressed the key elements, but HUD and Education lacked policies and procedures, and adequate documentation, for several of them.",
+   "label": "ai",
+   "op": "summary"
+  },
+  {
+   "text": "The consequences are concrete. Without documented procedures, the institutional knowledge underpinning each estimate is vulnerable to staff turnover, and the agencies cannot readily demonstrate that their estimates are supported, reliable and reasonable. GAO therefore recommends that HUD and Education develop and document additional procedures for their subsidy cost estimation processes. Both agencies concurred and described actions under way, including HUD's plans for documentation of the MMI cash flow model and an independent verification and validation of that model.",
+   "label": "ai",
+   "op": "summary"
+  }
+ ]
+}

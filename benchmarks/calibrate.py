@@ -21,11 +21,25 @@ import sys
 from collections import defaultdict
 from typing import Dict, List
 
-from common import DATA, FORMAT_SENSITIVE, RESULTS, ROOT, assign_splits, build_rows, load_manifest, merge_rows, neural_rows
+from common import (
+    DATA,
+    FORMAT_SENSITIVE,
+    IN_DOMAIN_WEIGHT,
+    MIN_SEGMENT_WORDS,
+    RESULTS,
+    ROOT,
+    assign_splits,
+    build_rows,
+    load_manifest,
+    merge_rows,
+    neural_rows,
+)
 
+from mrm_ai_detector import __version__
 from mrm_ai_detector.features import REGISTRY
 from mrm_ai_detector.features.neural import NEURAL_FEATURES
 from mrm_ai_detector.scoring import ScoringModel, sigmoid
+from mrm_ai_detector.text import is_prose, segment_document
 from mrm_ai_detector.train import Row, classification_metrics, train
 
 log = logging.getLogger("calibrate")
@@ -67,6 +81,42 @@ def evaluate(model: ScoringModel, rows: List[Row]) -> Dict:
     }
 
 
+def mixed_rows(source_ids, lm: bool) -> List[Row]:
+    """Segment rows from the mixed-authorship documents whose *source* document is in ``source_ids``.
+
+    A segment is labelled AI when at least 75% of its words were written or
+    rewritten by the assistant, human when none were (and at most 25% were
+    lightly polished); segments in between are ambiguous and left out.
+    """
+    from build_mixed import load_mixed, render
+    from eval_mixed import SegmentScorer, align
+
+    scorer = SegmentScorer(lm, DATA / f"mixed_features{'_lm' if lm else ''}.jsonl")
+    rows: List[Row] = []
+    for d in load_mixed():
+        if d["source"] not in source_ids:
+            continue
+        text = render(d)
+        words = text.split()
+        labels = [x for p in d["paragraphs"] for x in [p["label"]] * len(p["text"].split())]
+        pos = 0
+        for seg in segment_document(text):
+            got, pos = align(words, labels, seg.unit.text, pos)
+            got = [g for g in got if g != "heading"]
+            if not got or seg.unit.word_count < MIN_SEGMENT_WORDS or not is_prose(seg.unit):
+                continue
+            ai, pol = sum(g == "ai" for g in got) / len(got), sum(g == "polish" for g in got) / len(got)
+            if ai >= 0.75:
+                label = 1
+            elif ai == 0 and pol <= 0.25:
+                label = 0
+            else:
+                continue
+            rows.append(Row(d["id"], label, seg.unit.word_count, scorer.features(seg.unit.text), f"{d['id']}#{seg.index}",
+                            {"family": f"mixed_{d['generator']}", "model": d["generator"]}, IN_DOMAIN_WEIGHT))
+    return rows
+
+
 def pick_threshold(model: ScoringModel, rows: List[Row], target_fpr: float = 0.02) -> float:
     """Choose the AI threshold on *training* documents to keep human-document FPR at or below target."""
     docs: Dict[str, List] = defaultdict(list)
@@ -97,6 +147,7 @@ def main(argv=None) -> int:
     ap.add_argument("--lm", action="store_true", help="also calibrate the language-model-augmented model")
     ap.add_argument("--l2", type=float, default=3.0)
     ap.add_argument("--target-fpr", type=float, default=0.02)
+    ap.add_argument("--no-mixed", action="store_true", help="leave out the mixed-authorship documents (build_mixed.py)")
     args = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(message)s")
 
@@ -120,17 +171,20 @@ def main(argv=None) -> int:
         lm_test = merge_rows([r for r in rows_test if r.source in keep_test], nn_test)
         variants.append(("handcrafted+lm", [f for f in REGISTRY if f not in FORMAT_SENSITIVE] + list(NEURAL_FEATURES), "default_model_lm.json"))
 
+    train_sources = {d["id"] for d in train_docs}
     RESULTS.mkdir(parents=True, exist_ok=True)
     summary = {}
     for name, features, fname in variants:
         if name == "handcrafted+lm":
             rows_train, rows_test = lm_train, lm_test
+        mix = [] if args.no_mixed else mixed_rows(train_sources, lm=name == "handcrafted+lm")
+        log.info("%s: %d mixed-authorship training segments (ai=%d)", name, len(mix), sum(r.label for r in mix))
         model, cv = train(
-            rows_train, folds=5, name=f"mrm-{name}-v1", l2=args.l2, features=features,
+            rows_train + mix, folds=5, name=f"mrm-{name}-v{__version__}", l2=args.l2, features=features,
             description=f"Calibrated on the benchmark corpus ({name} features); see benchmarks/README.md",
         )
         model.ai_threshold = pick_threshold(model, rows_train, args.target_fpr)
-        model.segment_threshold = pick_segment_threshold(model, rows_train, args.target_fpr)
+        model.segment_threshold = pick_segment_threshold(model, rows_train + mix, args.target_fpr)
         model.human_threshold = 0.3
         held_out = evaluate(model, rows_test)
         model.metadata["held_out"] = {"segment": held_out["segment"], "document": held_out["document"]}

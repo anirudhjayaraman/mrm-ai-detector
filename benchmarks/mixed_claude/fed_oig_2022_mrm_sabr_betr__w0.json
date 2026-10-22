@@ -1,0 +1,92 @@
+{
+ "source": "fed_oig_2022_mrm_sabr_betr",
+ "family": "supervisory_findings",
+ "planned_share": 1.0,
+ "generator": "claude-opus-5-5",
+ "paragraphs": [
+  {
+   "text": "The Division of Supervision and Regulation (S&R) relies on supervisory models—including the Supervision and Regulation Statistical Assessment of Bank Risk (SR-SABR), the Holding Company Statistical Assessment of Bank Risk (HC-SABR) and the Bank Exams Tailored to Risk (BETR) models—to support risk-focused supervision. Because the outputs of these models inform decisions on supervisory programs, on the supervision of individual institutions and on how staff are deployed, the models need to be sound and to produce reasonable, reliable results. S&R has strengthened model risk management for the SR/HC-SABR and BETR models, but we identified three areas for further improvement. First, many of the models in use have not yet been reviewed by the Committee on Supervisory Model Oversight (COSMO) or validated by the System Model Validation (SMV) group, partly because COSMO's resources are constrained. Second, S&R should build a comprehensive inventory of top-tier supervisory models (TTSMs), including the SR/HC-SABR and BETR models, consistent with SR Letter 11-7. Third, S&R would benefit from a formal mechanism to track findings and recommendations arising from COSMO reviews and SMV validations, which would help COSMO manage model risk and drive timely remediation. The Board concurs with our recommendations and has described the actions it will take; we will follow up to confirm that they are fully implemented.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 310
+  },
+  {
+   "text": "The objective of this evaluation was to assess the effectiveness of model risk management for the SR/HC-SABR and BETR models, covering governance and validation activities in 2020 and 2021; model development was outside our scope. All model use carries model risk—the risk that decisions are influenced by model outputs or reports that are incorrect or misapplied—and the Board issued SR Letter 11-7 to set expectations for managing that risk at supervised institutions. Those expectations cover three areas: development, implementation and use; validation; and governance, policies and controls. COSMO serves as the oversight body for TTSMs, including the SR/HC-SABR and BETR models, and reviews each of them, after which the SMV group performs an independent validation. COSMO's charter states that the committee and its processes are intended to align, as far as possible and appropriate, with the sound practices set out in SR Letter 11-7.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 174
+  },
+  {
+   "text": "Finding 2 concerns the model inventory, which does not yet meet the expectations in SR Letter 11-7. We therefore recommend that S&R develop policies and procedures for creating and maintaining a comprehensive inventory of TTSMs, including all SR/HC-SABR and BETR models. These should set out who is responsible for maintaining the inventory, how often it is to be updated, which key elements it must contain, and how it will be shared with relevant parties (recommendation 4). We also recommend that S&R enhance the existing inventory so that it captures the key elements identified in SR Letter 11-7 (recommendation 5).",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 124
+  },
+  {
+   "text": "Under Finding 3, we recommend that S&R establish a formal process for tracking the findings and recommendations that result from COSMO reviews and SMV validations. Specifically, S&R should develop policies and procedures that clarify who is responsible for tracking findings and recommendations and how COSMO will report on their status to senior management (recommendation 6). S&R should also put in place a formal tracking mechanism that records, at a minimum, the date and a description of each finding and recommendation, its current status and planned remediation time frame, and the individual accountable for remediation (recommendation 7).",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 133
+  },
+  {
+   "text": "We have completed our evaluation of the effectiveness of the Board's model risk management processes for the Supervision and Regulation Statistical Assessment of Bank Risk, Holding Company Statistical Assessment of Bank Risk and Bank Exams Tailored to Risk models. A draft of the report was provided to you for review and comment, and your response, which concurs with our recommendations and describes the actions you plan to take, is included as appendix B. We are grateful for the cooperation of Board and Reserve Bank staff throughout the evaluation. Please let me know if you would like to discuss the report or any related matters.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 128
+  },
+  {
+   "text": "The System Risk Council identifies, evaluates, prioritizes and reports on risk issues, recommends actions where appropriate, and assesses how well the System's risk identification tools are working. It is co-chaired by the S&R officer responsible for Risk Identification and Analysis and an officer from the Division of Consumer and Community Affairs. CCAR is the Federal Reserve's annual assessment of whether the largest holding companies operating in the United States hold enough capital to keep operating under economic and financial stress, and whether their capital planning is robust, forward-looking and responsive to their specific risks. DFAST, conducted by both the System and the companies it supervises, is a related forward-looking exercise that tests whether institutions have sufficient capital to absorb losses and continue operating in adverse conditions. According to a COSMO member, COSMO reached an agreement with the SMV group on a preliminary validation process for COSMO's models, with the scope and timing of validation work to be revisited once the program had a clearer view of which models required review.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 208
+  },
+  {
+   "text": "COSMO reviews a model in two stages. The first focuses on the model's technical elements; the second examines its design, specification, calibration and performance in more detail, together with the arrangements for implementation and ongoing performance monitoring. On completing its review, COSMO gives model developers written feedback that reaches one of three conclusions: the model is generally fit for use, the model may be used with compensating controls, or the model should not be used because of significant concerns. COSMO also decides whether the model is ready for independent validation. In most cases, a COSMO member told us, developers address COSMO's recommendations before validation begins. Once COSMO confirms readiness, it notifies the SMV group, which carries out an independent review covering the conceptual soundness of the methodology, the code and model performance, and then reports its findings and recommendations to COSMO, which shares them with the developers. The SMV group assesses whether the model can meet its stated purpose but does not decide whether it should be used in supervision. That decision rests with COSMO, which determines how the SMV group's findings should be reflected in the model and, after consulting other System supervisory groups and stakeholders, recommends whether the model is fit for its intended purpose.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 253
+  },
+  {
+   "text": "Both the SR/HC-SABR and BETR models depend heavily on the data and analytical infrastructure maintained by Board Surveillance, which means that weaknesses in data quality or in automated production processes can flow directly into model outputs used by supervisors. For this reason, effective model risk management for these models extends beyond review of the statistical methodology to include the controls over data inputs, the production systems that generate model results, and the processes by which results are delivered to supervisory staff. Ongoing monitoring, including outcomes analysis and back-testing against realized supervisory ratings and bank failures, provides an important check that model performance remains acceptable as industry conditions and data change over time.",
+   "label": "ai",
+   "op": "continue",
+   "orig_words": 136
+  },
+  {
+   "text": "S&R concurs with our recommendations. For recommendation 1, S&R reports that COSMO and the SMV group have begun discussing options to make COSMO reviews and SMV validations more timely, and it intends to complete the recommended plan in the first quarter of 2023. For recommendation 2, COSMO plans to recommend compensating controls for models that are in use but have not yet been reviewed and validated, to communicate clearly the status of those models and controls, and to report a summary of compensating controls across all models to key stakeholders; S&R expects to have these procedures in place in the second quarter of 2023. For recommendation 3, COSMO intends to improve how it communicates with the SMV group, modelers and other stakeholders and to tailor status updates to each audience, with the recommended expectations to be developed in the first quarter of 2023. We consider these planned actions responsive to our recommendations and will follow up to confirm that they are fully implemented.",
+   "label": "ai",
+   "op": "continue",
+   "orig_words": 200
+  },
+  {
+   "text": "Key findings and conclusions",
+   "label": "heading",
+   "op": "heading"
+  },
+  {
+   "text": "S&R uses the SR/HC-SABR and BETR models to inform supervisory programs, the supervision of individual institutions and the allocation of examination staff, so weaknesses in how these models are governed can affect supervisory decisions directly. Our evaluation of governance and validation activities for 2020 and 2021 found that S&R has strengthened model risk management but that three gaps remain.",
+   "label": "ai",
+   "op": "summary"
+  },
+  {
+   "text": "First, review and validation have not kept pace with model use. Many SR/HC-SABR and BETR models are in use without having completed COSMO review and SMV validation, largely because of COSMO's resource constraints. S&R plans to develop options to make reviews and validations more timely and, in the interim, to apply and report compensating controls for models that have not yet been reviewed.",
+   "label": "ai",
+   "op": "summary"
+  },
+  {
+   "text": "Second, the inventory of top-tier supervisory models does not meet the expectations of SR Letter 11-7. We recommend policies that define ownership, update frequency, required content and distribution of the inventory, and enhancement of the inventory itself (recommendations 4 and 5).",
+   "label": "ai",
+   "op": "summary"
+  },
+  {
+   "text": "Third, findings and recommendations from COSMO reviews and SMV validations are tracked only informally. A formal tracking mechanism—recording each finding, its status, remediation time frame and accountable owner—would support effective challenge and timely remediation (recommendations 6 and 7).",
+   "label": "ai",
+   "op": "summary"
+  },
+  {
+   "text": "S&R concurs with all of our recommendations and expects to complete most of the planned actions during the first half of 2023.",
+   "label": "ai",
+   "op": "summary"
+  }
+ ]
+}

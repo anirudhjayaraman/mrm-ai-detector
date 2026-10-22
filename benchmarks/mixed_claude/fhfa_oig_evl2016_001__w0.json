@@ -1,0 +1,56 @@
+{
+ "source": "fhfa_oig_evl2016_001",
+ "family": "supervisory_findings",
+ "planned_share": 1.0,
+ "generator": "claude-opus-5-5",
+ "paragraphs": [
+  {
+   "text": "For one Enterprise, the semi-annual risk assessments cannot readily be compared from one year to the next, which reduces their value in planning risk-based supervision of that Enterprise. The two Enterprises have virtually identical federal charters, broadly comparable business models and similar risk profiles, and FHFA routinely compares them side by side in its published financial performance reports. Yet the wide variation in how each Enterprise's risks are assessed means the risk assessments cannot serve as a tool for comparing risk exposures between them, even though both face the same types of risk and those risks lend themselves to standardized measurement. To address the deficiencies identified in this evaluation, we make three recommendations to strengthen FHFA's risk assessment framework for the Enterprises, and FHFA has agreed with all three. This report was prepared by Jacob Kennedy, Senior Investigative Evaluator, and Desiree Yang, Financial Analyst. We appreciate the cooperation of FHFA staff and the assistance of everyone who contributed to the report, which has been distributed to Congress, the Office of Management and Budget and others and will be posted at www.fhfaoig.gov.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 201
+  },
+  {
+   "text": "Congress created FHFA in 2008 and, through the Housing and Economic Recovery Act of 2008 (HERA), charged it with supervising the Enterprises. As a federal financial regulator, FHFA's mission is to ensure that the Enterprises operate safely and soundly so that they remain a reliable source of liquidity and funding for housing finance and community investment. To assess their safety and soundness, FHFA conducts annual on-site examinations and targeted examinations and carries out ongoing monitoring. These supervisory activities are the responsibility of DER, which assigns a dedicated examination team, led by an examiner-in-charge, to each Enterprise, and the FHFA Examination Manual sets out guidance, standards and expectations for examiners. Like other federal financial regulators, FHFA takes a risk-based approach to supervision, and it describes risk assessments as the critical foundation for its annual supervisory strategies, targeted examinations and ongoing monitoring. A risk assessment identifies and evaluates the primary risks facing the regulated entity, the causes of adverse trends, the entity's strengths and vulnerabilities, and the adequacy of the systems management uses to measure, monitor and control risk, allowing examiners to concentrate their resources on the areas of greatest supervisory concern. Given this central role, DER requires each examiner-in-charge to update the Enterprise's risk assessment twice a year to reflect changes in its risk profile and in FHFA's supervisory concerns. The purpose of this evaluation was to determine whether FHFA's requirements are robust enough to produce risk assessments that serve that purpose.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 294
+  },
+  {
+   "text": "Other federal financial regulators set clearer expectations for how risk assessments are documented. The OCC's Large Bank Supervision handbook and the Federal Reserve's framework for risk-focused supervision of large complex institutions both prescribe how examiners are to assess and record risk. The NCUA, while it does not mandate a standard template, requires that each risk assessment document the procedures and testing performed, the factors considered in deciding which areas to review and how extensively, the analysis of each risk area, and the conclusions and recommendations reached, together with adequate support for them.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 110
+  },
+  {
+   "text": "DER's guidance leaves the content and format of each risk assessment largely to the discretion of the examiner-in-charge and the examination manager, who decide which measures to use in assessing risk and how to present their conclusions. That discretion has been exercised against a background of considerable turnover. Since 2011, DER has had three deputy directors and three Fannie Mae examiners-in-charge, and every Fannie Mae examination manager has changed; as of August 2015, the Fannie Mae examination managers had on average spent just under a year in their current roles and about two and a half years examining the Enterprise. Each change in personnel brings the possibility of a different approach to the risk assessment, which helps explain why the content of the assessments has varied so widely over time. Because FHFA does not require a common format or a common set of risk measures, our attempt to compare the two Enterprises' risk exposures and quality of risk management, and to test whether the two examination teams applied consistent judgments in rating risks high, moderate or low, was unsuccessful. A senior DER official agreed that a consistent, standardized approach would make risk assessments more efficient and more useful but said that, given the current differences in content and format, such consistency is not yet achievable.",
+   "label": "ai",
+   "op": "continue",
+   "orig_words": 214
+  },
+  {
+   "text": "First, the flexible guidance that FHFA and DER have adopted for preparing risk assessments falls well short of the requirements set by the other federal financial regulators we reviewed. The OCC requires examiners to assess specified factors in measuring risks and reaching conclusions about them, and the Federal Reserve promotes consistency by defining what constitutes high, moderate and low composite risk and strong, acceptable and weak risk management; both agencies also require examiners to complete a standard risk assessment template. DER's standards contain no comparable defined requirements. Second, the absence of minimum standards limits the usefulness of DER's risk assessments. Combined with the broad discretion given to examiners-in-charge and examination managers to choose and define risk measures, it has produced inconsistency, over a period of years, in how significant risks are defined and how supervisory concerns are identified for each Enterprise, which in turn weakens the assessments as a basis for a risk-based supervisory plan. This matters because the Enterprises share federal charters, permissible activities, business limitations, business models, risk exposures and conservatorship status, and FHFA's public reports already compare their financial condition and performance side by side and year over year. A senior DER official acknowledged that a consistent, standardized approach would be valuable but said that the lack of clear guidance, defined terms and a standard risk matrix currently makes such comparisons impossible.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 300
+  },
+  {
+   "text": "In our view, FHFA should bring its risk assessment requirements closer to the practices of the federal banking regulators. Minimum standards—common risk measures and evaluative criteria, a standard template and defined documentation requirements—would allow risk assessments to be compared over time and across the two Enterprises without removing the examiner judgment that a risk-based approach depends on. Stronger standards would also reduce DER's vulnerability to turnover, since new examiners-in-charge and examination managers would inherit a defined method rather than having to devise their own. We therefore make the following recommendations to FHFA.",
+   "label": "ai",
+   "op": "continue",
+   "orig_words": 150
+  },
+  {
+   "text": "Specifically, we recommend that FHFA establish (1) minimum requirements for risk assessments that support comparable analyses of each Enterprise's risk positions from year to year, including common criteria for rating risk levels as high, medium or low; and (2) standard requirements for format and supporting documentation, so that risk assessments can be compared between the Enterprises and variability among DER's assessments is reduced. We further recommend that FHFA (3) direct DER to train its examiners-in-charge and examination managers to prepare semi-annual risk assessments in line with the enhanced guidance described in recommendations 1 and 2. FHFA was given the opportunity to respond to a draft of this report and agreed with all three recommendations; its comments are reprinted in full in Appendix A, and its technical comments have been incorporated where appropriate.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 140
+  },
+  {
+   "text": "This evaluation examined the processes DER used in 2013 and 2014 to identify high-risk areas at the Enterprises. We interviewed FHFA personnel with examination responsibilities and reviewed publicly available documents, internal DER documents and non-public information provided by FHFA. The work was performed between February and July 2015 under the authority of the Inspector General Act and in accordance with the Council of the Inspectors General on Integrity and Efficiency's Quality Standards for Inspection and Evaluation (January 2012), which require that an evaluation be planned and performed so as to obtain evidence sufficient to provide a reasonable basis for its findings and recommendations. We believe the findings and recommendations in this report meet those standards.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 128
+  }
+ ]
+}

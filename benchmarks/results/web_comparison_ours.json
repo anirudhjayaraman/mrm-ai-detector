@@ -1,84 +1,84 @@
 {
   "mrm-detector": {
     "a1_claude_humanlike": {
-      "ai": 4.1,
+      "ai": 5.3,
       "verdict": "Likely human-written",
       "flagged": false
     },
     "a2_claude_numeric": {
-      "ai": 26.9,
+      "ai": 28.4,
       "verdict": "Likely human-written",
       "flagged": false
     },
     "a3_claude_ig_genre": {
-      "ai": 26.7,
+      "ai": 34.8,
       "verdict": "Inconclusive",
       "flagged": false
     },
     "a4_qwen": {
-      "ai": 90.8,
+      "ai": 92.0,
       "verdict": "Likely AI-generated",
       "flagged": true
     },
     "h1_sr11-7": {
-      "ai": 57.0,
+      "ai": 55.8,
       "verdict": "Inconclusive",
       "flagged": false
     },
     "h2_fed_oig_2015": {
-      "ai": 33.1,
+      "ai": 33.8,
       "verdict": "Inconclusive",
       "flagged": false
     },
     "h3_gao_16_269": {
-      "ai": 17.3,
+      "ai": 27.9,
       "verdict": "Likely human-written",
       "flagged": false
     },
     "h4_fhfa_oig_2020": {
-      "ai": 35.4,
+      "ai": 36.0,
       "verdict": "Inconclusive",
       "flagged": false
     }
   },
   "mrm-detector+lm": {
     "a1_claude_humanlike": {
-      "ai": 0.8,
+      "ai": 1.7,
       "verdict": "Likely human-written",
       "flagged": false
     },
     "a2_claude_numeric": {
-      "ai": 24.5,
+      "ai": 27.6,
       "verdict": "Likely human-written",
       "flagged": false
     },
     "a3_claude_ig_genre": {
-      "ai": 57.5,
+      "ai": 62.7,
       "verdict": "Likely AI-generated",
       "flagged": true
     },
     "a4_qwen": {
-      "ai": 99.5,
+      "ai": 99.7,
       "verdict": "Likely AI-generated",
       "flagged": true
     },
     "h1_sr11-7": {
-      "ai": 63.4,
+      "ai": 65.9,
       "verdict": "Likely AI-generated",
       "flagged": true
     },
     "h2_fed_oig_2015": {
-      "ai": 11.0,
+      "ai": 15.3,
       "verdict": "Likely human-written",
       "flagged": false
     },
     "h3_gao_16_269": {
-      "ai": 9.8,
+      "ai": 17.9,
       "verdict": "Likely human-written",
       "flagged": false
     },
     "h4_fhfa_oig_2020": {
-      "ai": 4.3,
+      "ai": 5.2,
       "verdict": "Likely human-written",
       "flagged": false
     }

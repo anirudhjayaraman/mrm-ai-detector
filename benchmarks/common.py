@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT.parent))
 
 from mrm_ai_detector.features import extract  # noqa: E402
-from mrm_ai_detector.text import segment_document  # noqa: E402
+from mrm_ai_detector.text import is_prose, segment_document  # noqa: E402
 from mrm_ai_detector.train import Row  # noqa: E402
 
 DATA = ROOT / "data"
@@ -91,7 +91,7 @@ def neural_cap(doc: Dict[str, str]) -> int:
 def document_segments(doc: Dict[str, str], seed: int = 5, limit: Optional[int] = None):
     """Up to MAX_SEGMENTS_PER_DOC segments; ``limit`` takes a further random subset of those."""
     text = (ROOT / doc["path"]).read_text(encoding="utf-8")
-    segs = [s for s in segment_document(text) if s.unit.word_count >= MIN_SEGMENT_WORDS]
+    segs = [s for s in segment_document(text) if s.unit.word_count >= MIN_SEGMENT_WORDS and is_prose(s.unit)]
     rng = random.Random(f"{seed}:{doc['id']}")
     if len(segs) > MAX_SEGMENTS_PER_DOC:
         segs = sorted(rng.sample(segs, MAX_SEGMENTS_PER_DOC), key=lambda s: s.index)

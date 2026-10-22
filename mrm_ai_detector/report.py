@@ -63,10 +63,13 @@ def render_text(results: Sequence[DocumentResult], color: bool = False, detail: 
         out.append(f"== {r.source}")
         out.append(f"Verdict      : {c(r.verdict, r.verdict)}")
         out.append(f"AI probability: {_pct(r.probability)}{_ci(r)}")
-        out.append(f"AI-flagged share of text: {_pct(r.ai_share)}  ({sum(s.flagged for s in r.segments)}/{len(r.segments)} segments)")
+        out.append(f"AI-flagged share of text: {_pct(r.ai_share)}  ({sum(s.flagged for s in r.segments)}/{sum(s.scored for s in r.segments)} scored segments)")
         out.append(f"Words: {r.word_count}   Model: {r.model}   Time: {r.elapsed_s:.2f}s")
         for w in r.warnings:
             out.append(f"! {w}")
+        if r.provenance:
+            out.append("Provenance hints (file traces; not part of the probability):")
+            out += [f"  - {h}" for h in r.provenance]
         if r.signals:
             out.append("Top signals (+ towards AI, − towards human):")
             for s in r.signals[:6]:
@@ -92,11 +95,13 @@ def render_markdown(results: Sequence[DocumentResult]) -> str:
         out.append(f"| {r.source} | {r.word_count} | {_pct(r.probability)}{_ci(r)} | {_pct(r.ai_share)} | {r.verdict} |")
     for r in results:
         out += ["", f"## {r.source}", "", f"**{r.verdict}** — AI probability {_pct(r.probability)}{_ci(r)}", ""]
+        if r.provenance:
+            out += ["**Provenance hints** (file traces; not part of the probability):", ""] + [f"- {h}" for h in r.provenance] + [""]
         if r.signals:
             out += ["| Signal | Value | Contribution | Meaning |", "|---|---:|---:|---|"]
             out += [f"| `{s.feature}` | {_fmt(s.value)} | {s.contribution:+.2f} | {s.description} |" for s in r.signals]
         out += ["", "| # | Section | Words | AI prob |", "|---:|---|---:|---:|"]
-        out += [f"| {s.index} | {s.section or ''} | {s.word_count} | {'**' if s.flagged else ''}{_pct(s.probability)}{'**' if s.flagged else ''} |" for s in r.segments]
+        out += [f"| {s.index} | {s.section or ''} | {s.word_count} | {'**' if s.flagged else ''}{_pct(s.probability) if s.scored else 'not scored (not prose)'}{'**' if s.flagged else ''} |" for s in r.segments]
     return "\n".join(out) + "\n"
 
 
@@ -145,6 +150,10 @@ def render_html(results: Sequence[DocumentResult]) -> str:
         parts.append(f"<div class='stat'><span class='muted'>Words</span><b>{r.word_count:,}</b></div></div>")
         for w in r.warnings:
             parts.append(f"<p class='v-mix'>⚠ {e(w)}</p>")
+        if r.provenance:
+            parts.append("<p><b>Provenance hints</b> <span class='muted'>(file traces; not part of the probability)</span></p><ul>")
+            parts += [f"<li>{e(h)}</li>" for h in r.provenance]
+            parts.append("</ul>")
         total = sum(s.word_count for s in r.segments) or 1
         parts.append("<div class='strip' title='Segment AI probability across the document'>")
         for s in r.segments:
@@ -157,12 +166,12 @@ def render_html(results: Sequence[DocumentResult]) -> str:
             parts.append("</table>")
         parts.append("<details open><summary>Segments</summary>")
         for s in r.segments:
-            alpha = max(0.0, (s.probability - 0.3) / 0.7) * 0.35
+            alpha = max(0.0, (s.probability - 0.3) / 0.7) * 0.35 if s.scored else 0.0
             border = "var(--ai)" if s.flagged else "var(--line)"
             sig = "; ".join(f"{g.feature} {g.contribution:+.2f}" for g in s.signals)
             parts.append(
                 f"<div class='seg' style='background:rgba(var(--hl),{alpha:.2f});border-left-color:{border}'>"
-                f"<div class='meta'>#{s.index} · {e(s.section or '—')} · {s.word_count} words · AI {_pct(s.probability)} · {e(sig)}</div>{e(s.text)}</div>"
+                f"<div class='meta'>#{s.index} · {e(s.section or '—')} · {s.word_count} words · {('AI ' + _pct(s.probability) + ' · ' + e(sig)) if s.scored else 'not scored (table or list)'}</div>{e(s.text)}</div>"
             )
         parts.append("</details></section>")
     parts.append("</main></body></html>")

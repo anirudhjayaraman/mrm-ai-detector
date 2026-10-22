@@ -1,0 +1,121 @@
+{
+ "source": "gao_13_400r",
+ "family": "validation_report",
+ "planned_share": 0.5,
+ "generator": "claude-opus-5-5",
+ "paragraphs": [
+  {
+   "text": "• Conducting an annual risk assessment. FHA has drawn up a plan for the first risk assessment of its Office of Single Family Housing. The plan calls for preparing baseline operational risk assessments and then updating them through visits to headquarters offices and to the homeownership centers—the field offices responsible for much of the day-to-day work of loan endorsement, processing and lender oversight. FHA expects to complete this inaugural assessment by September 2013.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 68
+  },
+  {
+   "text": "• Establishing ongoing mechanisms to anticipate risks. As noted above, FHA has created committees to address credit and operational risks. The charters for both committees indicate that they are to discuss and address emerging risks. And, as part of the annual risk-assessment process mentioned above, FHA plans to identify emerging risks.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "• Workforce planning. Leading organizations define the critical skills they need and identify gaps in those skills as part of workforce planning, but FHA's approach lacked mechanisms to do either. FHA had once prepared a workforce plan that identified critical competencies, analyzed skill gaps and set out comprehensive strategies to close them, but it had not produced a successor plan. It relied instead on occasional studies and on annual managerial assessments of staffing and training needs.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 68
+  },
+  {
+   "text": "• Succession planning. FHA also lacked a current succession plan; its previous plan, covering 2006–2009, had identified mission-critical positions, assessed staff competencies and estimated the number and likelihood of near-term retirements. Succession planning was especially important because, as of July 2011, almost 50 percent of Single Family Housing headquarters staff were eligible to retire within 3 years, and at the homeownership centers the share was even higher, at 63 percent (see next table).",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 85
+  },
+  {
+   "text": "Since our November 2011 report, FHA has developed a workforce analysis and succession plan that identifies gaps in mission-critical competencies and additional steps that need to be taken, although the timing of many of these steps is not specified. Completing these steps is critical to ensuring that the agency has adequate staff to effectively oversee its mortgage insurance programs.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "In our November 2011 report, we summarized FHA’s efforts to improve its IT systems. Recent increases in FHA’s business volume had exacerbated its IT constraints. A consultant FHA hired to examine technology constraints and identify risks related to processing workloads (for single-family programs) reported in 2009 that critical elements of IT infrastructure were at capacity, causing work slowdowns and poor customer service. For example, network overloads slowed systems in the afternoon, when work hours overlapped at the homeownership centers (which are in different time zones). To partially address these issues, HUD upgraded the mainframe’s system capacity and made changes to certain applications to improve response time. Nevertheless, during a period in which transaction levels continued to increase, FHA had reached the limit of hardware and software capacity on IT systems.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "In August 2009, FHA identified five critical initiatives to address the system constraints affecting its single-family insurance programs. Two of these were to implement a standard automated underwriting system that would evaluate loan applications and related data to determine eligibility for insurance, and to replace the Computerized Home Underwriting Management System (CHUMS), FHA's principal underwriting system, with a commercial off-the-shelf product intended to shorten processing times, improve data accuracy and provide better customer service.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 73
+  },
+  {
+   "text": "In January 2010, FHA began working on key aspects of the five initiatives as part of its “FHA Transformation” efforts, which HUD initially estimated would cost $281 million over the next 5 years. For example, the agency began replacing CHUMS. At that time, we noted that FHA had major components to complete. To meet its goal of replacing CHUMS with a new platform, FHA also would have to migrate functions and applications associated with loan origination and underwriting, lender approval and monitoring, and loan servicing and administration. In addition to these CHUMS components, several other IT systems would have to be moved to the new platform.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "Moreover, the audit of FHA’s 2012 and 2011 financial statements identified a significant deficiency related to IT systems, and stated that FHA management and the HUD Office of the Chief Information Officer should mitigate persistent IT control deficiencies. A significant deficiency is one or a combination of deficiencies in internal control that is less severe than a material weakness, yet important enough to merit attention by those charged with governance. The audit report noted that expensive and manual compensating controls, including monthly reconciliations of data among the interfaced systems, were needed to manage the numerous systems and that security and access controls had weaknesses. (We noted in November 2011 that the large number of systems resulted in hundreds of interfaces, which meant that changing one system required extensive effort to maintain the interfaces across systems. The multiple systems and interfaces also presented challenges for maintaining appropriate accessibility levels, security controls, and privacy standards.)",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "HERA might increase the potential for losses. To calculate the amount of funds available to a borrower, lenders start with a limiting factor of home value or the HECM loan limit, whichever is lower. The increase in the HECM loan limit meant that relatively more borrowers would have their HECM capped by the home’s value, rather than the loan limit. The potential for losses is higher with such a loan because the projected loan balance is more likely to exceed the projected home value. When this effect is combined with declining home prices, the potential for losses increases. Combined with borrowers opting to receive more of their equity upfront, HECM loan performance declined dramatically in recent years. The independent actuary projected the economic value of the HECM portfolio to be negative $2.8 billion at the end of 2012.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "• More borrowers maximizing upfront draw. The vast majority of recent borrowers take out 80 percent or more of the maximum amount possible in one initial cash draw. Research performed by the independent actuaries indicates that HECM loans with such high up- front draws are twice as likely to have a tax-and-insurance default (discussed below) than loans with initial draws of 60 percent, and four times as likely as loans with initial draws of 40 percent.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "• Tax and insurance defaults. Many borrowers who draw all available cash at the outset are left without enough cash flow in later years to pay for property maintenance, taxes and insurance. As a result, defaults arising from borrowers' inability or unwillingness to pay property taxes and insurance have become more frequent in recent years, weakening program performance.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 60
+  },
+  {
+   "text": "• Increased property conveyance rates. The conveyance rate upon termination increased sharply during this past year. Research indicates that this was directly tied to falling home prices. Owners and estate executors faced with mortgage balances greater than property value at the time of borrower exit from the home are less willing to market and sell the property than those with positive equity in the home. In such cases, there is no financial benefit from managing the property sale and so those responsible for the home are more likely to convey the property to HUD for sale. Property management and marketing costs associated with the disposition of homes conveyed to HUD typically cost approximately 12 percent of property value and thus increase the severity of loss for FHA.",
+   "label": "human",
+   "op": "human"
+  },
+  {
+   "text": "FHA insures almost all reverse mortgages, which allow homeowners aged 62 and older to borrow against the equity in their homes. In 2012, FHA insured 54,591 reverse mortgages under its Home Equity Conversion Mortgage (HECM) program, with a total value of $78 billion; by comparison, its portfolio of forward mortgages exceeded $1 trillion. Since 2009, HECM loans have been insured under FHA's Mutual Mortgage Insurance Fund.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 66
+  },
+  {
+   "text": "• Longevity risk. Updated estimates indicate that borrowers are living longer, and loans are terminating more slowly, than previously assumed. Slower terminations increase the likelihood that a loan balance will exceed the value of the property when the loan ends, and incorporating the revised longevity assumptions lowers the economic value of the HECM portfolio in the actuarial analysis.",
+   "label": "ai",
+   "op": "notes",
+   "orig_words": 52
+  },
+  {
+   "text": "This report is a work of the U.S. government and is not subject to copyright protection in the United States. It may be reproduced and distributed in its entirety without further permission from GAO. Because it may contain copyrighted images or other material, however, anyone wishing to reproduce such material separately may need permission from the copyright holder.",
+   "label": "ai",
+   "op": "rewrite",
+   "orig_words": 62
+  },
+  {
+   "text": "Key findings and conclusions",
+   "label": "heading",
+   "op": "heading"
+  },
+  {
+   "text": "FHA has made progress on several of the management and risk issues we have previously identified, but significant challenges remain.",
+   "label": "ai",
+   "op": "summary"
+  },
+  {
+   "text": "On risk management, FHA has established committees to oversee credit and operational risk and plans to complete its first risk assessment of the Office of Single Family Housing by September 2013. On human capital, it has since prepared a workforce analysis and succession plan, which is important given that as of July 2011 almost 50 percent of Single Family Housing headquarters staff, and 63 percent of homeownership center staff, were eligible to retire within 3 years.",
+   "label": "ai",
+   "op": "summary"
+  },
+  {
+   "text": "IT modernization remains a concern. FHA's \"Transformation\" initiatives, including a standard automated underwriting system and the replacement of CHUMS, were initially estimated at $281 million over 5 years, and the audit of FHA's 2011 and 2012 financial statements identified a significant deficiency related to IT systems.",
+   "label": "ai",
+   "op": "summary"
+  },
+  {
+   "text": "The HECM program presents growing risks to the Mutual Mortgage Insurance Fund. Most borrowers now draw 80 percent or more of the available funds up front, which has contributed to rising tax and insurance defaults, while slower loan terminations and falling home prices have increased the likelihood that loan balances will exceed property values. With 54,591 HECMs insured in 2012 totaling $78 billion, these trends warrant continued attention as FHA seeks to restore the fund's financial condition.",
+   "label": "ai",
+   "op": "summary"
+  }
+ ]
+}

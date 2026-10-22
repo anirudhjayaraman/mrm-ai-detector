@@ -245,6 +245,31 @@ def segment_document(text: str, target_words: int = 180, min_words: int = 60) ->
     return [Segment(i, s.section, s.unit) for i, s in enumerate(segments)]
 
 
+_CAPTION_RE = re.compile(r"^\s*(?:Figure|Fig\.|Table|Exhibit|Chart)\s+[A-Z]?\d+", re.IGNORECASE)
+_TOKEN_RE = re.compile(r"\S+")
+
+
+def is_prose(unit: TextUnit) -> bool:
+    """Whether a chunk is running prose worth scoring.
+
+    Tables flattened by PDF extraction, lists of figure captions and software
+    listings carry none of the stylistic signal the features rely on, and in
+    practice they produce spurious AI flags.  Such chunks are reported but not
+    scored.
+    """
+    tokens = _TOKEN_RE.findall(unit.text)
+    if len(tokens) < 30:
+        return False
+    alpha = sum(1 for t in tokens if WORD_RE.fullmatch(t.strip(".,;:()[]\"'“”‘’")))
+    if alpha / len(tokens) < 0.6:
+        return False
+    paras = [p for p in unit.paragraphs if p.strip()]
+    if len(paras) >= 3 and sum(bool(_CAPTION_RE.match(p)) for p in paras) / len(paras) >= 0.6:
+        return False
+    sentences = [x for x in unit.sentences if len(WORD_RE.findall(x)) >= 4]
+    return len(sentences) >= 2
+
+
 def resample_sentences(unit: TextUnit, indices: Sequence[int]) -> TextUnit:
     """Return a copy of ``unit`` whose sentences are replaced by ``indices`` (bootstrap)."""
     return TextUnit(

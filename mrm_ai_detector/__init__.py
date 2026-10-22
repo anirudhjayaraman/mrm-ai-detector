@@ -12,7 +12,7 @@ They are not proof of authorship and must not be used as the sole basis for
 any decision about a person.
 """
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 from .detector import Detector, DocumentResult, SegmentResult  # noqa: E402
 from .scoring import ScoringModel  # noqa: E402
